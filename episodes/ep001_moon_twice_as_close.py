@@ -98,5 +98,5 @@ SCENES = [
 
 if __name__ == "__main__":
     out = ROOT / "output/ep001_moon_twice_as_close.mp4"
-    path, dur = build(SCENES, out, voice=(sys.argv[1] if len(sys.argv) > 1 else "bm_george"))
+    path, dur = build(SCENES, out, voice=(sys.argv[1] if len(sys.argv) > 1 else "dark"))
     print(f"rendered {path} ({dur:.1f}s)")

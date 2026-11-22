@@ -77,13 +77,19 @@ def caption(img, text, t):
         acc += share
 
 # ---------- build ----------
-def build(scenes, out_path, voice="bm_george", speed=1.0, music=None):
+def build(scenes, out_path, voice="dark", speed=1.0, music=None):
+    from voice_fx import PRESETS, render as render_fx
     from kokoro_onnx import Kokoro
     k = Kokoro(str(ROOT / "models/kokoro-v1.0.onnx"), str(ROOT / "models/voices-v1.0.bin"))
     work = pathlib.Path(out_path).with_suffix(""); work.mkdir(parents=True, exist_ok=True)
     audio, durs, sr, srt, clock = [], [], 24000, [], 0.0
     for i, s in enumerate(scenes):
-        a, sr = k.create(s["text"], voice=voice, speed=speed, lang="en-gb" if voice[0] == "b" else "en-us")
+        if voice in PRESETS:  # processed original narrator voices (voice_fx.py)
+            vf = work / f"scene{i}.wav"; render_fx(voice, s["text"], str(vf), seed=i)
+            a, sr = sf.read(vf, dtype="float32")
+            if a.ndim > 1: a = a.mean(axis=1)
+        else:
+            a, sr = k.create(s["text"], voice=voice, speed=speed, lang="en-gb" if voice[0] == "b" else "en-us")
         pad = np.zeros(int(sr * s.get("pad", 0.45)), dtype=a.dtype)
         a = np.concatenate([np.zeros(int(sr * 0.15), dtype=a.dtype), a, pad]); audio.append(a)
         d = len(a) / sr; durs.append(d)
