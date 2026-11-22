@@ -23,6 +23,9 @@ def main(users):
                       if not (e["id"] in seen or seen.add(e["id"]))])
     # interleave accounts so both progress
     queue = [x for i in range(max(map(len, lists))) for l in lists if i < len(l) for x in [l[i]]]
+    snap = ROOT / "research/tiktok/tiktok_snapshot.db"  # committed copy: resume from it after a container reset
+    if snap.exists() and db.execute("select count(*) from tiktok").fetchone()[0] == 0:
+        s = sqlite3.connect(snap); db.executemany("insert or replace into tiktok values (?,?,?,?,?,?,?,?,?,?,?,?)", s.execute("select * from tiktok")); db.commit()
     done = {r[0] for r in db.execute("select id from tiktok where transcript is not null")}
     for n, (u, e) in enumerate(queue, 1):
         if e["id"] in done: continue

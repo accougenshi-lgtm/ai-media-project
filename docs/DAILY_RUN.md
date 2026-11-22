@@ -11,7 +11,9 @@ YouTube channel id UC8BNoObKWQuks2pzVrpHSbg (verified; long uploads allowed). Pu
 vidIQ free plan = 150 credits/month: spend them on research that changes decisions, not on routine checks.
 
 ## 10 AM research (no publishing)
-1. `bash pipeline/setup.sh`.
+1. `bash pipeline/setup.sh`. If the TikTok transcriber isn't running and isn't finished, restart it
+   (`HF_HUB_DISABLE_XET=1 nohup python3 pipeline/tiktok_transcribe.py blakeryan052 sina.growthtech &`);
+   snapshot progress with `sqlite3 .backup` into `research/tiktok/tiktok_snapshot.db` and commit it.
 2. **Our data:** stats for every published video → `docs/experiments.md` (views, avg view duration, CTR, subs gained).
    Verify yesterday's post is actually public (first upload was silently removed once).
 3. **Outside data:** what's breaking out in our niches (vidIQ outliers / trending; `pipeline/research_niches.py`;
