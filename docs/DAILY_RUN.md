@@ -1,25 +1,39 @@
-# Daily run playbook (followed by the scheduled daily task)
+# Daily run playbook (followed by the scheduled sessions)
 
 Owner's standing rules: **post at least one video every day**, learn and improve something every day,
-ask the owner for anything needed. Owner granted standing approval to publish to the channel.
+ask the owner only for what is truly needed. The owner has handed over the channel and given standing approval to publish.
+Schedule (America/Chicago): **10 AM research → 12 PM create → 1:00 PM video goes public** (scheduled via publishAt).
 
 ## Channel
-YouTube `@desecrated-you` (channel id UC8BNoObKWQuks2pzVrpHSbg), published via the vidIQ connector
-(`vidiq_social_account_list` → `vidiq_video_upload` localFile → `vidiq_upload_image` → `vidiq_social_post_draft_create` → `vidiq_social_post_publish`).
+YouTube channel id UC8BNoObKWQuks2pzVrpHSbg (verified; long uploads allowed). Publish via vidIQ:
+`vidiq_video_upload` (localFile) → `vidiq_upload_image` (thumbnail) → `vidiq_social_post_draft_create`
+(privacyStatus public + publishAt 13:00 America/Chicago) → `vidiq_social_post_publish` → `vidiq_social_post_status`.
+vidIQ free plan = 150 credits/month: spend them on research that changes decisions, not on routine checks.
 
-## Every day
-1. `bash pipeline/setup.sh` (fresh containers lose models/deps).
-2. **Learn:** pull stats for every published video (`vidiq_user_videos` / `vidiq_video_stats`), log them in `docs/experiments.md`
-   (views, avg view duration, CTR when available). Write one concrete lesson + one change for today.
-3. **Make today's video**, alternating formats per `docs/content_queue.md`:
-   - Short (what-if with real math, 45–75 s, vertical, voice `dark`) via `pipeline/engine.py`, or
-   - Sleep long-form (voice `dark_soft`) via `pipeline/sleep_engine.py`, at least 1 every 3 days, getting longer (target 60–120 min).
-   Fact-check every claim into `docs/factcheck_epNNN.md`. Never repeat a script or template wording.
-4. QA: contact-sheet frames, loudness check, title/thumbnail honest and readable.
-5. Publish (public). Shorts: title ≤ 60 chars + `#shorts`. Disclose AI voice in description.
-6. Commit + push everything; update `docs/experiments.md` and `docs/content_queue.md`.
-7. Report to the owner in 3–5 lines: what was posted (link), numbers so far, what was learned, anything needed.
+## 10 AM research (no publishing)
+1. `bash pipeline/setup.sh`.
+2. **Our data:** stats for every published video → `docs/experiments.md` (views, avg view duration, CTR, subs gained).
+   Verify yesterday's post is actually public (first upload was silently removed once).
+3. **Outside data:** what's breaking out in our niches (vidIQ outliers / trending; `pipeline/research_niches.py`;
+   small channels with views ≫ subs). Study 2–3 videos that teach YouTube growth/retention/packaging.
+   Write dated, sourced takeaways in `docs/research_log.md`. Never invent numbers.
+4. Re-rank `docs/content_queue.md`.
+5. If a sleep video is due within 2 days: write + fact-check + start rendering it in the background now.
+
+## 12 PM create
+1. `bash pipeline/setup.sh`.
+2. Pick today's video from the top of the queue, informed by this morning's notes and past results.
+3. Write the script, then **self-critique**: hook in first line? every claim sourced? anything generic/templated? fix it.
+   Fact-check into `docs/factcheck_epNNN.md`. Never reuse a previous script's wording.
+4. Render (Short: `pipeline/engine.py`, voice `dark`; Sleep: `pipeline/sleep_engine.py`, voice `dark_soft`, ≥60 min target), QA frames + loudness.
+5. Thumbnail (long-form) + honest title. Shorts: ≤60-char title with #shorts. Description discloses the AI voice.
+6. Upload and **schedule public for 13:00 America/Chicago today**. Confirm the status is scheduled.
+7. Commit + push; update queue + experiments; report to the owner in 3–5 lines.
+
+## Formats
+- Short (45–75 s, vertical): what-if with real math. Most days.
+- Sleep long-form: at least every 3rd day, getting longer (60 → 120 min) as the pipeline speeds up.
 
 ## Guardrails
-- No misleading titles, no reused footage, no copyrighted music, no realistic fakes of real events.
-- If an upload is refused or something looks risky to the channel, stop and ask the owner.
+- No misleading titles, reused footage, copyrighted music, or realistic fakes of real events.
+- If an upload is refused/removed or something looks risky for the channel, stop and ask the owner.
