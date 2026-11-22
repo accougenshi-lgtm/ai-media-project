@@ -28,7 +28,8 @@ vidIQ free plan = 150 credits/month: spend them on research that changes decisio
    small channels with views ≫ subs). Study 2–3 videos that teach YouTube growth/retention/packaging.
    Write dated, sourced takeaways in `docs/research_log.md`. Never invent numbers.
 4. Re-rank `docs/content_queue.md`.
-5. If a sleep video is due within 2 days: write + fact-check + start rendering it in the background now.
+5. Pre-render tomorrow's Blender hero shot(s) in the background (pipeline/blender/space_shot.py).
+6. If a sleep video is due within 2 days: write + fact-check + start rendering it in the background now.
 
 ## 11 AM strategy & development
 1. `python3 pipeline/ideas.py due`, then one analytics call → record each due checkpoint with `ideas.py check`; `ideas.py report` vs baseline.
@@ -41,8 +42,9 @@ vidIQ free plan = 150 credits/month: spend them on research that changes decisio
 2. Pick today's video from the top of the queue, informed by this morning's notes and past results.
 3. Write the script following the rules in `docs/narration_study.md`, then **self-critique**: hook in first line? every claim sourced? anything generic/templated? fix it.
    Fact-check into `docs/factcheck_epNNN.md`. Never reuse a previous script's wording.
-4. Render (Short: `pipeline/engine.py`, voice `dark`; Sleep: `pipeline/sleep_engine.py`, voice `dark_soft`, ≥60 min target), QA frames + loudness.
-5. Thumbnail (long-form) + honest title. Shorts: ≤60-char title with #shorts. Description discloses the AI voice.
+4. Plan shots first (storyboard list in the episode file: which shots are Blender hero shots, which are 2D). Render (Short: `pipeline/engine.py`, voice `dark`; Sleep: `pipeline/sleep_engine.py`, voice `dark_soft`, ≥60 min target), QA frames + loudness.
+5. **QC gate per docs/QUALITY.md**: score all 10 categories into docs/qc_log.md; hard blockers stop publishing; max 2 fixes per defective shot.
+6. Thumbnail (long-form) + honest title. Shorts: ≤60-char title with #shorts. Description discloses the AI voice.
 6. Upload and **schedule public for 13:00 America/Chicago today**. Confirm the status is scheduled.
 7. `ideas.py used <id> <videoId>`, `ideas.py video ...`; add a row to `docs/creative_log.md`.
 8. Verify the upload succeeded (`vidiq_social_post_status`, then `vidiq_user_videos` after 1 PM).
