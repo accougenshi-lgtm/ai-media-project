@@ -11,13 +11,19 @@ PRESETS = {
                    fx="equalizer=f=120:t=q:w=1:g=4,equalizer=f=3000:t=q:w=1:g=2,acompressor=threshold=-18dB:ratio=3:attack=5:release=80"),
     "gravel": dict(mix={"am_fenrir": .5, "am_adam": .5}, speed=.9, semis=-3.0,
                    fx="equalizer=f=100:t=q:w=1:g=5,asoftclip=type=tanh:threshold=0.6,equalizer=f=2500:t=q:w=1:g=3,acompressor=threshold=-20dB:ratio=4:attack=3:release=60"),
+    # sleep: same dark timbre, softened: slower, gentle pitch drop, no grit, warm low-mids, airy top rolled off
+    "dark_soft": dict(mix={"am_onyx": .7, "am_fenrir": .3}, speed=.84, semis=-1.5,
+                   fx="equalizer=f=200:t=q:w=1:g=2,highshelf=f=6000:g=-5,acompressor=threshold=-22dB:ratio=2:attack=20:release=200"),
     "george_plus": dict(mix={"bm_george": 1.0}, speed=.97, semis=-0.5,
                    fx="acompressor=threshold=-18dB:ratio=2.5:attack=5:release=80"),
 }
 
 def render(preset, text, out, seed=3):
     p = PRESETS[preset]; rnd = random.Random(seed)
-    k = Kokoro(str(ROOT / "models/kokoro-v1.0.onnx"), str(ROOT / "models/voices-v1.0.bin"))
+    global _K
+    if "_K" not in globals() or _K is None:
+        _K = Kokoro(str(ROOT / "models/kokoro-v1.0.onnx"), str(ROOT / "models/voices-v1.0.bin"))
+    k = _K
     style = sum(k.get_voice_style(v) * w for v, w in p["mix"].items())
     lang = "en-gb" if next(iter(p["mix"]))[0] == "b" else "en-us"
     parts, sr = [], 24000
