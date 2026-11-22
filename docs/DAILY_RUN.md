@@ -2,7 +2,15 @@
 
 Owner's standing rules: **post at least one video every day**, learn and improve something every day,
 ask the owner only for what is truly needed. The owner has handed over the channel and given standing approval to publish.
-Schedule (America/Chicago): **10 AM research → 12 PM create → 1:00 PM video goes public** (scheduled via publishAt).
+Schedule (America/Chicago): **10 AM research → 11 AM strategy → 12 PM produce → 1:00 PM public** (scheduled via publishAt).
+Full brief: `docs/MISSION.md`. Idea database + per-video tracker: `pipeline/ideas.py` (tables ideas / videos / checks).
+
+## vidIQ credit budget (free plan: 150 per month, resets on the 22nd)
+- 11 AM: **one** `vidiq_channel_analytics` call per day (dimension video: views, engagedViews, minutes, AVD, AVP, subs, likes, comments) covers every 24 h/72 h/7 d check. 5 credits.
+- Retention curve (`report: audience_retention`): only for a video worth diagnosing, at most 2 per week.
+- Research: free sources first (yt-dlp search, web). vidIQ outliers/transcripts at most about 3 per day.
+- Studio data lags 1–2 days; empty rows ≠ zero views. Swipe-away rate and CTR need the vidIQ browser extension (not available here).
+- If credits run low before the reset, tell the owner (vidIQ Boost may be worth it once data justifies; ask before any spend).
 
 ## Channel
 YouTube channel id UC8BNoObKWQuks2pzVrpHSbg (verified; long uploads allowed). Publish via vidIQ:
@@ -22,6 +30,12 @@ vidIQ free plan = 150 credits/month: spend them on research that changes decisio
 4. Re-rank `docs/content_queue.md`.
 5. If a sleep video is due within 2 days: write + fact-check + start rendering it in the background now.
 
+## 11 AM strategy & development
+1. `python3 pipeline/ideas.py due`, then one analytics call → record each due checkpoint with `ideas.py check`; `ideas.py report` vs baseline.
+2. Name what is gaining traction and what is underperforming; log one concrete weakness + fix in `docs/experiments.md`.
+3. `ideas.py rank`; pick today's video by expected performance, originality, feasibility, appeal; write a short production plan in `docs/experiments.md`.
+4. Keep ≥1 controlled variable per day (hook style, length, voice, structure) and record the hypothesis.
+
 ## 12 PM create
 1. `bash pipeline/setup.sh`.
 2. Pick today's video from the top of the queue, informed by this morning's notes and past results.
@@ -30,7 +44,9 @@ vidIQ free plan = 150 credits/month: spend them on research that changes decisio
 4. Render (Short: `pipeline/engine.py`, voice `dark`; Sleep: `pipeline/sleep_engine.py`, voice `dark_soft`, ≥60 min target), QA frames + loudness.
 5. Thumbnail (long-form) + honest title. Shorts: ≤60-char title with #shorts. Description discloses the AI voice.
 6. Upload and **schedule public for 13:00 America/Chicago today**. Confirm the status is scheduled.
-7. Commit + push; update queue + experiments; report to the owner in 3–5 lines.
+7. `ideas.py used <id> <videoId>`, `ideas.py video ...`; add a row to `docs/creative_log.md`.
+8. Verify the upload succeeded (`vidiq_social_post_status`, then `vidiq_user_videos` after 1 PM).
+9. Commit + push; report to the owner in 3–5 lines.
 
 ## Formats
 - Short (45–75 s, vertical): what-if with real math. Most days.

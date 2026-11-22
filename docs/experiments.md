@@ -20,3 +20,4 @@ Format per day: date · what changed · numbers (48h / 7d) · lesson · next cha
   Hypothesis: a short, absurd-but-true premise + loop → higher stay rate and AVD/length than a 70 s Short. Compare at 48 h / 7 d.
 - Ops lesson: worker restarts kill background renders. Chapter writes are now atomic (.part → rename); the 10 AM/12 PM sessions must check and restart jobs.
 - Tool: pipeline/vidiq_upload.sh (resumable upload) replaces pasting vidIQ's long command.
+- 2026-11-22 ~13:15 CT: first vidiq_channel_analytics call returned 0 rows for 11/20–11/22 (Studio data lag 1–2 days, not zero views).
