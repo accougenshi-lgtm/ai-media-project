@@ -15,4 +15,4 @@
 12. SHORT: Every planet's day length, ranked
 
 ## Published
-- 2026-11-22 · SLEEP · Moon Facts to Fall Asleep To (28 min) · https://www.youtube.com/watch?v=vPvEdJxbaEA
+- 2026-11-22 · SLEEP · Moon Facts to Fall Asleep To (28 min) · https://www.youtube.com/watch?v=82sf45vCeqM (first upload vPvEdJxbaEA removed: unverified 15-min cap)

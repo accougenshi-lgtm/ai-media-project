@@ -8,3 +8,5 @@ Format per day: date · what changed · numbers (48h / 7d) · lesson · next cha
 - Lesson learned today: uploads via vidIQ work end to end (video + thumbnail). Wikimedia blocks this server,
   so original procedural visuals are the default asset source.
 - Next change: start daily Shorts so the channel has a discovery engine; make sleep videos ≥60 min.
+- Incident: first upload (vPvEdJxbaEA) was removed by YouTube "because it was too long": channel was unverified (15-min cap).
+  Owner verified the channel; re-posted same video. Lesson: always check verification/limits before long uploads.
