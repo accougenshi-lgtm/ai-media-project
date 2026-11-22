@@ -84,6 +84,74 @@ def corona(bg, cx, cy, r):
     c = np.clip(np.exp(-(d - 1) * 2.2) * streak, 0, 1) * (d > 1)
     bg += c[..., None] * np.array([0.95, 0.93, 0.85]); np.clip(bg, 0, 1, out=bg)
 
+
+def sun_disc(size, rng):
+    y, x = np.mgrid[-1:1:size * 1j, -1:1:size * 1j].astype(np.float32)
+    r2 = x * x + y * y; inside = r2 < 1; mu = np.sqrt(np.clip(1 - r2, 0, 1))
+    gran = 0.85 + 0.15 * smooth_noise(size, size, max(3, size // 120), rng)
+    limb = 0.35 + 0.65 * mu ** 0.6  # limb darkening
+    rgb = np.stack([np.ones_like(mu), 0.78 + 0.15 * mu, 0.35 + 0.35 * mu], -1) * (limb * gran)[..., None]
+    edge = np.clip((1 - np.sqrt(r2)) * size / 2.5, 0, 1)
+    return np.clip(rgb, 0, 1), (inside * edge).astype(np.float32)
+
+def banded_disc(size, rng, palette, freq=9, phase=0.5, storm=None):
+    y, x = np.mgrid[-1:1:size * 1j, -1:1:size * 1j].astype(np.float32)
+    r2 = x * x + y * y; inside = r2 < 1; z = np.sqrt(np.clip(1 - r2, 0, 1))
+    turb = smooth_noise(size, size, max(4, size // 30), rng)
+    band = 0.5 + 0.5 * np.sin(y * freq * np.pi + turb * 3.0)
+    a, b = np.array(palette[0]), np.array(palette[1])
+    col = a * band[..., None] + b * (1 - band[..., None])
+    if storm:
+        sx, sy, sr = storm; d = ((x - sx) / (sr * 1.6)) ** 2 + ((y - sy) / sr) ** 2
+        col = np.where((d < 1)[..., None], col * 0.5 + np.array([0.75, 0.35, 0.22]) * 0.5, col)
+    L = np.array([-math.sin(phase), -0.2, math.cos(phase)]); L /= np.linalg.norm(L)
+    lit = np.clip(x * L[0] + y * L[1] + z * L[2], 0, 1) ** 0.7 + 0.02
+    edge = np.clip((1 - np.sqrt(r2)) * size / 2.5, 0, 1)
+    return np.clip(col * lit[..., None], 0, 1), (inside * edge).astype(np.float32)
+
+def rings(bg, cx, cy, R, front, tilt=0.28):
+    h, w, _ = bg.shape; y, x = np.mgrid[0:h, 0:w].astype(np.float32)
+    dx, dy = (x - cx) / R, (y - cy) / (R * tilt); d = np.sqrt(dx * dx + dy * dy)
+    ring = ((d > 1.25) & (d < 2.25)).astype(np.float32) * (0.55 + 0.45 * np.sin(d * 40) ** 2) * (1 - ((d > 1.85) & (d < 1.93)))
+    half = (y > cy) if front else (y <= cy)
+    a = ring * half * 0.85
+    bg[:] = bg * (1 - a[..., None]) + a[..., None] * np.array([0.86, 0.8, 0.66])
+
+def nebula_bg(h, w, rng):
+    bg = starfield(h, w, rng, n=3200)
+    wisp = np.zeros((h, w), np.float32)
+    for sc, wt in [(420, 0.55), (160, 0.3), (60, 0.15)]:  # multi-scale fbm, soft wisps
+        wisp += smooth_noise(h, w, sc, rng) * wt
+    wisp = np.clip((wisp - 0.38) * 2.4, 0, 1) ** 1.6
+    tint = smooth_noise(h, w, 500, rng)[..., None]
+    col = np.array([0.55, 0.18, 0.42]) * tint + np.array([0.12, 0.32, 0.58]) * (1 - tint)
+    glow = np.asarray(Image.fromarray((wisp * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(14)), np.float32)[..., None] / 255
+    return np.clip(bg + glow * col * 1.25, 0, 1)
+
+def galaxy(bg, cx, cy, R, rng, tilt=0.45, arms=2, wind=3.2):
+    h, w, _ = bg.shape; y, x = np.mgrid[0:h, 0:w].astype(np.float32)
+    dx, dy = (x - cx) / R, (y - cy) / (R * tilt); r = np.sqrt(dx * dx + dy * dy) + 1e-3; th = np.arctan2(dy, dx)
+    spiral = (0.5 + 0.5 * np.cos(arms * (th - wind * np.log(r)))) ** 3
+    noise = smooth_noise(h, w, 18, rng)
+    disk = np.exp(-r / 0.38) * (0.35 + 0.9 * spiral * (0.6 + 0.8 * noise)) * (r < 1.6)
+    core = np.exp(-(r / 0.09) ** 2) * 1.4
+    bg += disk[..., None] * np.array([0.55, 0.65, 1.0]) * 0.9 + core[..., None] * np.array([1.0, 0.9, 0.7])
+    np.clip(bg, 0, 1, out=bg)
+
+def deepfield(h, w, rng, n=1100):
+    bg = starfield(h, w, rng, n=700) * 0.5
+    im = Image.fromarray((bg * 255).astype(np.uint8)); d = ImageDraw.Draw(im)
+    for _ in range(n):
+        cx, cy = rng.uniform(0, w), rng.uniform(0, h)
+        s = 1.2 + rng.pareto(2.2) * 2.5; s = min(s, 26); e = rng.uniform(0.25, 1); ang = rng.uniform(0, 3.14)
+        c = [(255, 215, 165), (190, 205, 255), (255, 175, 130), (235, 235, 225)][rng.integers(0, 4)]
+        k = rng.uniform(0.15, 0.6) * (1.3 if s > 8 else 1)
+        dx, dy = s * math.cos(ang), s * math.sin(ang)
+        d.ellipse([cx - abs(dx) - s * e * .5, cy - abs(dy) - s * e * .5, cx + abs(dx) + s * e * .5, cy + abs(dy) + s * e * .5],
+                  fill=tuple(int(min(255, v * k)) for v in c))
+    im = im.filter(ImageFilter.GaussianBlur(2.2))
+    return np.asarray(im, np.float32) / 255
+
 def paint(kind, seed):
     rng = np.random.default_rng(seed); bg = starfield(OH, OW, rng)
     if kind == "full":      m, a = moon_disc(820, rng, 0.05); paste(bg, m, a, OW * .5, OH * .5, glow=(.9, .9, .85))
@@ -100,10 +168,22 @@ def paint(kind, seed):
         m, a = moon_disc(380, rng, 0.2); paste(bg, m, a, OW * .66, OH * .3, glow=(.8, .8, .75))
         y, x = np.mgrid[0:OH, 0:OW]; hills = OH * .78 + 60 * np.sin(x / 260) + 30 * np.sin(x / 97 + 2)
         bg[y > hills] = bg[y > hills] * 0.05 + np.array([0.01, 0.012, 0.02])
-    return Image.fromarray((bg * 255).astype(np.uint8))
+    elif kind == "sun":     m, a = sun_disc(760, rng); paste(bg, m, a, OW * .5, OH * .5, glow=(1, .75, .35))
+    elif kind == "mars":    m, a = banded_disc(640, rng, [(0.78, 0.38, 0.2), (0.62, 0.28, 0.16)], freq=3); paste(bg, m, a, OW * .55, OH * .5, glow=(.6, .3, .15))
+    elif kind == "jupiter": m, a = banded_disc(820, rng, [(0.86, 0.76, 0.62), (0.66, 0.48, 0.34)], freq=11, storm=(0.25, 0.35, 0.12)); paste(bg, m, a, OW * .5, OH * .5, glow=(.5, .4, .3))
+    elif kind == "saturn":
+        cx, cy, R = OW * .5, OH * .5, 280
+        rings(bg, cx, cy, R, front=False); m, a = banded_disc(2 * R, rng, [(0.9, 0.82, 0.6), (0.78, 0.68, 0.48)], freq=8)
+        paste(bg, m, a, cx, cy, glow=(.4, .35, .25)); rings(bg, cx, cy, R, front=True)
+    elif kind == "nebula":  bg = nebula_bg(OH, OW, rng)
+    elif kind == "galaxy":  galaxy(bg, OW * .5, OH * .5, 900, rng)
+    elif kind == "deepfield": bg = deepfield(OH, OW, rng)
+    return Image.fromarray((np.clip(bg, 0, 1) * 255).astype(np.uint8))
 
 # ---------------- audio ----------------
-def narrate_chapter(text, out, preset="dark_soft", para_pause=1.6):
+PARA_PAUSE = 1.6  # seconds between paragraphs; episodes may raise it
+def narrate_chapter(text, out, preset="dark_soft", para_pause=None):
+    para_pause = PARA_PAUSE if para_pause is None else para_pause
     from voice_fx import render
     paras = [p.strip() for p in text.split("\n\n") if p.strip()]
     chunks, sr, times = [], 24000, []
