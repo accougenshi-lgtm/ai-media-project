@@ -227,7 +227,8 @@ def build(script_md, visuals, out_mp4, title_font=64):
             subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-framerate", str(FPS), "-i", str(png),
                             "-i", str(wav), "-vf", vf, "-t", f"{dur:.2f}", "-c:v", "libx264", "-preset", "veryfast",
                             "-tune", "stillimage", "-crf", "20", "-pix_fmt", "yuv420p", "-r", str(FPS),
-                            "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-af", "apad", str(mp4)], check=True)
+                            "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-af", "apad", str(mp4.with_suffix(".part.mp4"))], check=True)
+            mp4.with_suffix(".part.mp4").rename(mp4)  # atomic: a killed render never leaves a half-written chapter
             (work / f"ch{i:02}.times").write_text("\n".join(f"{a}\t{b}\t{p}" for a, b, p in times))
         dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(mp4)],
                                    capture_output=True, text=True).stdout)

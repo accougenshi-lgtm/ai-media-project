@@ -1,7 +1,6 @@
 # Content queue (top = next). Move items to "Published" with date + link.
 
 ## Up next
-1. SHORT (30–40 s): The Moon is leaving us: 3.8 cm a year (loopable ending)
 2. SLEEP (~50 min, RENDERING since 2026-11-22 10 AM; publish 2026-11-23 or 24): 100 Quiet Facts About the Universe to Fall Asleep To (episodes/ep003_universe_sleep)
 3. SHORT (30–40 s): What if the Moon were twice as close? (re-cut EP001: 72 s → ~35 s, keep the 8× / 64× beats)
 4. SHORT (30 s): What if sound were as slow as walking? (absurd + concrete premise)
@@ -16,4 +15,5 @@
 12. SHORT: Every planet's day length, ranked
 
 ## Published
+- 2026-11-22 13:00 CT · SHORT · The Moon Is Leaving Us (We Measure It With Lasers) (30 s) · https://www.youtube.com/watch?v=pSZKjWZYPZM
 - 2026-11-22 · SLEEP · Moon Facts to Fall Asleep To (28 min) · https://www.youtube.com/watch?v=82sf45vCeqM (first upload vPvEdJxbaEA removed: unverified 15-min cap)
