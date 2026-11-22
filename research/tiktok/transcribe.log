@@ -1,0 +1,68 @@
+[1/1100] blakeryan052 143800 ok
+[2/1100] sina.growthtech 2100000 ok
+[3/1100] blakeryan052 54500 ok
+[4/1100] sina.growthtech 1600000 ok
+[5/1100] blakeryan052 41500 FAIL nection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')). Giving up after 10 retries
+
+[6/1100] sina.growthtech 1500000 ok
+[7/1100] blakeryan052 40400 FAIL nection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')). Giving up after 10 retries
+
+[8/1100] sina.growthtech 1300000 ok
+[9/1100] blakeryan052 31900 FAIL nection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')). Giving up after 10 retries
+
+[10/1100] sina.growthtech 1300000 FAIL nection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')). Giving up after 10 retries
+
+[11/1100] blakeryan052 23800 ok
+[12/1100] sina.growthtech 1300000 ok
+[13/1100] blakeryan052 14100 ok
+[14/1100] sina.growthtech 814000 ok
+[15/1100] blakeryan052 14100 ok
+[16/1100] sina.growthtech 652300 FAIL nection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')). Giving up after 10 retries
+
+[17/1100] blakeryan052 10800 FAIL nection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')). Giving up after 10 retries
+
+[18/1100] sina.growthtech 606700 ok
+[19/1100] blakeryan052 10700 FAIL nection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')). Giving up after 10 retries
+
+[20/1100] sina.growthtech 568400 ok
+[21/1100] blakeryan052 9242 ok
+[22/1100] sina.growthtech 543600 FAIL nection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')). Giving up after 10 retries
+
+[5/1100] blakeryan052 41500 FAIL nection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')). Giving up after 10 retries
+
+[7/1100] blakeryan052 40400 FAIL nection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')). Giving up after 10 retries
+
+[9/1100] blakeryan052 31900 FAIL nection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')). Giving up after 10 retries
+
+[10/1100] sina.growthtech 1300000 ok
+[16/1100] sina.growthtech 652300 ok
+[17/1100] blakeryan052 10800 FAIL nection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')). Giving up after 10 retries
+
+[19/1100] blakeryan052 10700 FAIL nection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')). Giving up after 10 retries
+
+[22/1100] sina.growthtech 543600 ok
+[23/1100] blakeryan052 6453 ok
+[24/1100] sina.growthtech 515000 ok
+[25/1100] blakeryan052 5806 FAIL nection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')). Giving up after 10 retries
+
+[26/1100] sina.growthtech 458500 ok
+[27/1100] blakeryan052 5478 FAIL nection failed: 403 Forbidden (agent proxy: no rule or network setting allows this host)')). Giving up after 10 retries
+
+[28/1100] sina.growthtech 439000 ok
+[29/1100] blakeryan052 5121 ok
+[30/1100] sina.growthtech 395900 ok
+[31/1100] blakeryan052 3755 ok
+[32/1100] sina.growthtech 371100 ok
+[33/1100] blakeryan052 3610 ok
+[34/1100] sina.growthtech 336700 ok
+[35/1100] blakeryan052 3521 ok
+[36/1100] sina.growthtech 304300 ok
+[37/1100] blakeryan052 2878 ok
+[38/1100] sina.growthtech 279700 ok
+[39/1100] blakeryan052 2785 FAIL rors, then see  https://github.com/yt-dlp/yt-dlp#impersonation  for information on installing the required dependencies
+
+[40/1100] sina.growthtech 260700 ok
+[41/1100] blakeryan052 2721 ok
+[42/1100] sina.growthtech 249800 ok
+[43/1100] blakeryan052 2693 ok
+[44/1100] sina.growthtech 229400 ok

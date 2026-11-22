@@ -1,0 +1,21 @@
+
+######## @blakeryan052
+since Jun 2026: 93 posts (3.8/week), median 1,064, mean 5,408
+  <30s    n=   9 median      612  hits>=100k 0
+  30-60s  n=  26 median    1,097  hits>=100k 0
+  1-3m    n=   9 median      901  hits>=100k 0
+  3-10m   n=  21 median    1,027  hits>=100k 0
+  10m+    n=  31 median    1,471  hits>=100k 1
+  by year: {2026: (96, 1058)}
+  like rate 5.6%  save rate 3.36%
+  top50 hashtags: [('youtubeautomation', 36), ('faceless', 25), ('youtubeniche', 14), ('youtubevideo', 11), ('youtubechannel', 9), ('youtube', 8), ('facelessyoutube', 8), ('youtubemonetization', 7), ('channel', 6), ('youtubestrategy', 6), ('youtuber', 5), ('passiveincome', 5)]
+
+######## @sina.growthtech
+since Jun 2026: 261 posts (10.6/week), median 4,863, mean 42,726
+  <30s    n=  95 median      614  hits>=100k 0
+  30-60s  n= 397 median    1,051  hits>=100k 13
+  1-3m    n= 510 median    4,907  hits>=100k 35
+  3-10m   n=   2 median    9,454  hits>=100k 0
+  by year: {2019: (58, 124), 2020: (10, 196), 2021: (32, 271), 2022: (194, 784), 2023: (123, 8092), 2024: (69, 631), 2025: (113, 2411), 2026: (405, 5263)}
+  like rate 3.5%  save rate 1.02%
+  top50 hashtags: [('ai', 43), ('chatgpt', 17), ('tech', 16), ('aiagents', 10), ('artificialintelligence', 9), ('vibecoding', 8), ('aitools', 8), ('nvidia', 6), ('chatgpthack', 4), ('news', 4), ('openai', 4), ('aiagent', 4)]

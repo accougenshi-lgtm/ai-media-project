@@ -2,3 +2,6 @@ models/
 output/
 __pycache__/
 *.wav
+
+research/tiktok/audio/
+research/tiktok/*.json
