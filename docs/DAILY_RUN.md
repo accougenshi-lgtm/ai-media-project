@@ -25,7 +25,7 @@ vidIQ free plan = 150 credits/month: spend them on research that changes decisio
 ## 12 PM create
 1. `bash pipeline/setup.sh`.
 2. Pick today's video from the top of the queue, informed by this morning's notes and past results.
-3. Write the script, then **self-critique**: hook in first line? every claim sourced? anything generic/templated? fix it.
+3. Write the script following the rules in `docs/narration_study.md`, then **self-critique**: hook in first line? every claim sourced? anything generic/templated? fix it.
    Fact-check into `docs/factcheck_epNNN.md`. Never reuse a previous script's wording.
 4. Render (Short: `pipeline/engine.py`, voice `dark`; Sleep: `pipeline/sleep_engine.py`, voice `dark_soft`, ≥60 min target), QA frames + loudness.
 5. Thumbnail (long-form) + honest title. Shorts: ≤60-char title with #shorts. Description discloses the AI voice.
@@ -34,7 +34,7 @@ vidIQ free plan = 150 credits/month: spend them on research that changes decisio
 
 ## Formats
 - Short (45–75 s, vertical): what-if with real math. Most days.
-- Sleep long-form: at least every 3rd day, getting longer (60 → 120 min) as the pipeline speeds up.
+- Sleep long-form: at least every 3rd day, target 90–150 min (top competitors run 2–2.5 h), rendered ahead in the 10 AM session.
 
 ## Guardrails
 - No misleading titles, reused footage, copyrighted music, or realistic fakes of real events.

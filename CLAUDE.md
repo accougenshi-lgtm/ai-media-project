@@ -4,7 +4,8 @@ Mission: build an AI-assisted YouTube channel to monetization with original, wel
 Current channel #1: science what-ifs with real math (see docs/STRATEGY.md). Free tools only until data justifies spending.
 
 ## Hard rules
-- Never publish, spend money, delete, or change accounts without the owner's OK.
+- The owner handed over the YouTube channel and gave standing approval to publish daily (2026-11-22).
+  Still ask before spending money, deleting anything, or changing anything outside the channel's videos.
 - Every factual claim needs a source or a shown derivation in `docs/factcheck_epNNN.md`.
 - Never invent analytics or competitor numbers; research numbers come from `research/research.db` with fetch dates.
 - Only public-domain / CC0 / self-made assets; log credits in `assets/pd/credits.json`.
