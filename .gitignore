@@ -6,3 +6,4 @@ __pycache__/
 research/tiktok/audio/
 research/tiktok/*.json
 research/tiktok/transcribe.log
+research/tiktok/tiktok_work.db
