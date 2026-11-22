@@ -13,7 +13,18 @@ No loud music, no sudden sounds. Just gentle narration and slow, quiet visuals o
 Every fact in this video is checked against NASA and peer-reviewed sources.
 
 CHAPTERS
-{paste output/ep002_moon_sleep/chapters.txt here}
+0:00 The Quiet Neighbour
+2:27 A Collision, Long Ago
+4:53 The Face That Never Turns Away
+7:21 Phases of Silver Light
+9:44 Seas Without Water
+12:15 Heat, Cold, and Hidden Ice
+14:48 The Slow Goodbye
+17:12 Footprints in the Dust
+19:36 Lighter Steps
+22:00 A Perfect Coincidence
+24:20 Return to the Moon
+26:26 Drifting Off
 
 Narration voice is synthetic (AI text-to-speech). All visuals are original illustrations, and the ambient soundtrack is original.
 
