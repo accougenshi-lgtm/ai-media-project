@@ -5,3 +5,4 @@ __pycache__/
 
 research/tiktok/audio/
 research/tiktok/*.json
+research/tiktok/transcribe.log
