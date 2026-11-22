@@ -5,7 +5,8 @@ import sys, json, sqlite3, subprocess, pathlib, datetime, os
 from faster_whisper import WhisperModel
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-DB = ROOT / "research/tiktok/tiktok_work.db"  # gitignored while running; merged into research.db when done; AUD = ROOT / "research/tiktok/audio"; AUD.mkdir(parents=True, exist_ok=True)
+DB = ROOT / "research/tiktok/tiktok_work.db"  # gitignored while running; merged into research.db when done
+AUD = ROOT / "research/tiktok/audio"; AUD.mkdir(parents=True, exist_ok=True)
 
 def main(users):
     db = sqlite3.connect(DB)
