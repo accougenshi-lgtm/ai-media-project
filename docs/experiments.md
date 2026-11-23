@@ -28,3 +28,14 @@ Format per day: date · what changed · numbers (48h / 7d) · lesson · next cha
 - Work block 02:23 CT: scheduled 11-24 09:30 clip (YdGlyoar9oo). QA fixes: US/UK spelling false-fails removed; headline cap ≤10 words; captions follow script spelling. EP003 re-render restarted (container reset).
 - 2026-11-23 work blocks 06:23/08:23 CT: Voyager clip uploaded + drafted (postId 783bc9cc, slot 11-24 15:30) but vidiq_social_post_publish now needs per-call approval (permission mode changed); BLOCKED, owner notified. QA: years read as pairs (1977), comma-number fix, stray-hyphen captions fixed.
 - 16:23 UTC block: EP003 v2 done (43.8 min; labels heard 11/12, was 5/12; loud −18.98 LUFS, motion pass); uploaded + drafted for 11-24 21:00. Both drafts listed in docs/pending_posts.md (publish blocked on approval).
+
+## 2026-11-23 11 AM strategy
+- Data: vidiq_channel_analytics (11-21→11-23, by video) = **0 rows** (Studio lag; 2nd day). Channel (vidiq_user_channels, free):
+  **2 subscribers** (first subs), 3 public videos, channel viewCount still 0 (stale counter). Last per-video number: EP002 12 views at 8.5 h.
+  24 h checkpoint for 82sf45vCeqM not recorded: no per-video data yet (will not estimate).
+- Traction: first 2 subs within ~33 h of the first upload. Underperforming: insufficient data.
+- Weakness: publishing pipeline depends on a per-call approval that went unanswered twice → 2 finished videos waiting (docs/pending_posts.md).
+  Fix: owner asked to "Always allow" vidiq publish or re-enable Auto mode; meanwhile keep producing ahead.
+- Plan for the next open slots (11-25 shortA/shortB): shortA = **original what-if Short** "What if all 8 billion people stood in one place?" (idea #5, top-ranked;
+  evidence 453K/41× and 31K at 46 subs). shortB = best remaining clip. **Variable tested: original what-if vs clip format** (same slot times, compare 72 h views + APV).
+- Analytics budget: skip tomorrow's paid call unless today's Studio data appears in the free channel counter first (save credits during lag).
