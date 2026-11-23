@@ -50,3 +50,6 @@ Uses "we" (narrator and viewer together).
 5. One memorable, slightly odd CTA line is allowed (a personality signal), but no more than one.
 
 **Not copying:** no "you know/like" filler (it sounds wrong in TTS), no sponsor reads, no fictional events presented as real.
+
+**TTS rule (2026-11-23, from blind QA):** never make a label its own short sentence ("Fact two."). The voice preset's short-line emphasis
+(slower + lower pitch) smears the F into "Vact" (STT heard it right only 5/12 times). Write "Fact two: ..." (3/3 clear in testing).

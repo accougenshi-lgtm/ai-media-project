@@ -175,6 +175,7 @@ def paint(kind, seed):
         cx, cy, R = OW * .5, OH * .5, 280
         rings(bg, cx, cy, R, front=False); m, a = banded_disc(2 * R, rng, [(0.9, 0.82, 0.6), (0.78, 0.68, 0.48)], freq=8)
         paste(bg, m, a, cx, cy, glow=(.4, .35, .25)); rings(bg, cx, cy, R, front=True)
+    elif kind == "icegiant": m, a = banded_disc(760, rng, [(0.55, 0.78, 0.86), (0.36, 0.6, 0.78)], freq=5, phase=0.7); paste(bg, m, a, OW * .5, OH * .5, glow=(.3, .55, .75))
     elif kind == "nebula":  bg = nebula_bg(OH, OW, rng)
     elif kind == "galaxy":  galaxy(bg, OW * .5, OH * .5, 900, rng)
     elif kind == "deepfield": bg = deepfield(OH, OW, rng)

@@ -2,7 +2,10 @@
 
 Owner's standing rules: **post at least one video every day**, learn and improve something every day,
 ask the owner only for what is truly needed. The owner has handed over the channel and given standing approval to publish.
-Schedule (America/Chicago): **10 AM research → 11 AM strategy → 12 PM produce → 1:00 PM public** (scheduled via publishAt).
+Schedule (America/Chicago), owner update 2026-11-23: **work ahead and schedule**. Posting slots (never two at once):
+**Short A 09:30 · Short B 15:30 (6 h apart) · Sleep 21:00** (ultra-long; whenever a render is ready, min 1 day apart).
+Sessions: 10 AM research · 11 AM strategy · **work block every 2 h at :23** (fills open slots up to 48 h ahead, else learns) · Sunday weekly review.
+Planner: `pipeline/schedule.py need|book|show`. Clip Shorts from our own sleep videos: `pipeline/clip_short.py rank|make` (owner OK'd clipping).
 Full brief: `docs/MISSION.md`; SOP + adaptations: `docs/SOP.md`. Idea database + per-video tracker: `pipeline/ideas.py` (tables ideas / videos / checks).
 
 ## vidIQ credit budget (free plan: 150 per month, resets on the 22nd)
@@ -38,7 +41,10 @@ vidIQ free plan = 150 credits/month: spend them on research that changes decisio
 3. `ideas.py rank`; pick today's video by expected performance, originality, feasibility, appeal; write a short production plan in `docs/experiments.md`.
 4. Keep ≥1 controlled variable per day (hook style, length, voice, structure) and record the hypothesis.
 
-## 12 PM create
+## 2-hour work blocks (production)
+Fill the earliest open slot from `schedule.py need 2`; the steps below apply to every video produced.
+
+## Production steps
 1. `bash pipeline/setup.sh`.
 2. Pick today's video from the top of the queue, informed by this morning's notes and past results.
 3. Write the script following the rules in `docs/narration_study.md`, then **self-critique**: hook in first line? every claim sourced? anything generic/templated? fix it.
