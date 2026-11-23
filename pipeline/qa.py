@@ -19,7 +19,9 @@ def num2words(n):
     for v, w in ((10**12, "trillion"), (10**9, "billion"), (10**6, "million"), (1000, "thousand")):
         if n >= v: return num2words(n // v) + " " + w + ("" if n % v == 0 else " " + num2words(n % v))
 US_UK = {"centimeters": "centimetres", "kilometers": "kilometres", "meters": "metres", "meter": "metre", "color": "colour",
-         "colors": "colours", "neighbor": "neighbour", "neighborhood": "neighbourhood", "gray": "grey", "theater": "theatre"}
+         "colors": "colours", "neighbor": "neighbour", "neighborhood": "neighbourhood", "gray": "grey", "theater": "theatre",
+         "traveling": "travelling", "traveler": "traveller", "center": "centre", "centers": "centres", "centimeter": "centimetre",
+         "kilometer": "kilometre", "neighbors": "neighbours", "favorite": "favourite", "behavior": "behaviour", "humor": "humour", "liter": "litre", "fiber": "fibre"}
 def _num(m):
     x = m.group(0).replace(",", "")
     try:
@@ -31,7 +33,7 @@ def norm(t):
     """Spell digits out as words (Whisper writes '3.8', '22,000'), unify US/UK spelling, drop punctuation."""
     t = t.lower()
     t = re.sub(r"\d[\d,]*(\.\d+)?", _num, t)
-    t = t.replace("-", " ").replace(" and ", " ")
+    t = t.replace("-", " ").replace(" and ", " ").replace("goodnight", "good night")
     t = re.sub(r"[^a-z ]", " ", t)
     return " ".join(US_UK.get(w, w) for w in t.split())
 

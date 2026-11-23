@@ -26,7 +26,7 @@ def used(): return json.loads(USED.read_text()) if USED.exists() else []
 
 def ass_time(t): return f"{int(t//3600)}:{int(t%3600//60):02}:{t%60:05.2f}"
 
-def make(epdir, ch, idx, out, speed=1.08, kind=None):
+def make(epdir, ch, idx, out, speed=1.08, kind=None, hook=None):
     from faster_whisper import WhisperModel
     epdir = pathlib.Path(epdir); fx = [f for f in facts(epdir) if f["ch"] == ch and f["idx"] == idx][0]
     wav, sr = sf.read(epdir / f"ch{ch:02}.wav", dtype="float32")
@@ -46,7 +46,14 @@ def make(epdir, ch, idx, out, speed=1.08, kind=None):
         while k < len(words) and (re.sub(r"[^a-z]", "", words[k].word.lower()) in LABEL or re.sub(r"[^0-9]", "", words[k].word)): k += 1
     t0 = max(0.0, words[k].start - 0.08) if k < len(words) else 0.0
     words = words[k:]
-    body = re.sub(r"^Fact [a-z ]+[.:]\s*", "", fx["text"]); hook = re.split(r"(?<=[.!?])\s", body)[0]
+    body = re.sub(r"^Fact [a-z ]+[.:]\s*", "", fx["text"])
+    if not hook:  # headline must be short: first sentence, cut at the first comma if longer than 10 words
+        hook = re.split(r"(?<=[.!?])\s", body)[0]
+        if len(hook.split()) > 10: hook = hook.split(",")[0].rstrip(".") + "."
+    from qa import US_UK
+    for w in words:  # captions follow the script's (UK) spelling, like the headline
+        core = re.sub(r"[^a-z]", "", w.word.lower())
+        if core in US_UK: w.word = w.word.lower().replace(core, US_UK[core])
     # audio: trim, speed up (pitch kept), add soft pad, loudness for Shorts
     dur = (len(seg) / sr - t0) / speed
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{t0:.3f}", "-i", str(tmp / "raw.wav"),
@@ -92,4 +99,4 @@ if __name__ == "__main__":
         u = used(); fs = [f for f in facts(a[1]) if f"{pathlib.Path(a[1]).name}:{f['ch']}:{f['idx']}" not in u]
         for f in sorted(fs, key=lambda f: -f["score"])[:15]: print(f"{f['score']:5} ch{f['ch']:02} #{f['idx']:<2} {f['dur']:4.1f}s  {f['text'][:95]}")
     else:
-        make(a[1], int(a[2]), int(a[3]), a[4], float(a[5]) if len(a) > 5 and a[5] != "-" else 1.08, a[6] if len(a) > 6 else None)
+        make(a[1], int(a[2]), int(a[3]), a[4], float(a[5]) if len(a) > 5 and a[5] != "-" else 1.08, a[6] if len(a) > 6 else None, a[7] if len(a) > 7 else None)
