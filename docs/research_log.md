@@ -32,3 +32,13 @@
 1. Shorts: target **30–40 s**, open on the absurd premise, loopable last line. Re-cut EP001 or replace it.
 2. Next sleep video: "100 facts" format, ≥85 min (scaling to 2–3 h as render speed improves), a gentle-humour pass.
 3. Keep both formats on one channel (official guidance says this is fine).
+
+## 2026-11-23: 10 AM session (free sources only; 0 vidIQ credits)
+- yt-dlp search "facts to fall asleep to space", uploaded this week: 8 new videos from ≥7 channels (Soft Lightyears, What A Wonderful World,
+  Curious Minds Official, Space Facts to Fall Asleep To, Mustard Explains, Science Sleep Station, Starlitude Space), 43 min–8 h long, 3–292 views so far.
+  → The niche is filling fast with near-identical "Space Facts to Fall Asleep To" titles; new uploads start slowly (evergreen pattern).
+- Differentiators seen: **news-pegged sleep titles**, e.g. "What Artemis II Saw Behind the Moon" (292 views, best of the week) and
+  "Voyager 1 Reaches One Light-Day"; distinctive series names ("Dragon Galaxy Facts"). Generic titles dominate, so a specific premise stands out.
+- Decision: next sleep title gets a specific, timely or unusual premise, not "Space Facts to Fall Asleep To". Clip Shorts can ride news pegs
+  (our Voyager clip already says "nearly a full day").
+- "what if science shorts" this-week filter returned nothing (search filter quirk); rely on vidIQ outliers (Nov 22) for Shorts.
