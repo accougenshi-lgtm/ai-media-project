@@ -22,3 +22,9 @@ data & experiments (§4), audience loop (§5), memory/reliability (§6), 90-day 
 
 ## Lessons logged
 - 2026-11-23: EP004 narration said "twenty two thousand km" while the screen showed 22,800. QA now compares spoken numbers to on-screen numbers.
+
+## Owner investment agreement (2026-11-23)
+- Owner will check in whenever asked (keep requests rare, short, binary).
+- Owner's current GPU is underpowered. **Trigger for new hardware / paid tools: a consistent couple of thousand views per video**
+  (track as the 14-day median views per upload ≥ ~2,000). Until then: free tools only.
+- When the trigger is hit, write docs/proposals.md (item, cost, bottleneck, projected lift, cost per extra sub/watch hour) and ask.

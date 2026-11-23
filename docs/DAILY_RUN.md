@@ -33,7 +33,8 @@ vidIQ free plan = 150 credits/month: spend them on research that changes decisio
 
 ## 11 AM strategy & development
 1. `python3 pipeline/ideas.py due`, then one analytics call → record each due checkpoint with `ideas.py check`; `ideas.py report` vs baseline.
-2. Name what is gaining traction and what is underperforming; log one concrete weakness + fix in `docs/experiments.md`.
+2. Track the 14-day median views per upload vs the owner's investment trigger (~2,000/video, see docs/SOP.md).
+   Name what is gaining traction and what is underperforming; log one concrete weakness + fix in `docs/experiments.md`.
 3. `ideas.py rank`; pick today's video by expected performance, originality, feasibility, appeal; write a short production plan in `docs/experiments.md`.
 4. Keep ≥1 controlled variable per day (hook style, length, voice, structure) and record the hypothesis.
 
