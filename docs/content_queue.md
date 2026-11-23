@@ -1,7 +1,7 @@
 # Content queue (top = next). Move items to "Published" with date + link.
 
 ## Up next
-2. SLEEP (~50 min, RENDERING since 2026-11-22 10 AM; publish 2026-11-23 or 24): 100 Quiet Facts About the Universe to Fall Asleep To (episodes/ep003_universe_sleep)
+2. SLEEP (46 min, RENDERED 2026-11-22; loudness+motion QA pass, audio WER running → output/ep003_qa_audio.json): 100 Quiet Facts About the Universe to Fall Asleep To. Needs thumbnail + upload sheet.
 3. SHORT (30–40 s): What if the Moon were twice as close? (re-cut EP001: 72 s → ~35 s, keep the 8× / 64× beats)
 4. SHORT (30 s): What if sound were as slow as walking? (absurd + concrete premise)
 5. SHORT: How long would it take to fall through the Earth? (~42 min; real calc)
