@@ -241,7 +241,7 @@ def build(script_md, visuals, out_mp4, title_font=64):
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy", str(joined)], check=True)
     pad = work / "pad.wav"; ambient_pad(str(pad), clock + 5)
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(joined), "-i", str(pad), "-filter_complex",
-                    "[0:a]loudnorm=I=-20:TP=-2[v];[1:a]volume=0.55,aresample=48000[m];[v][m]amix=inputs=2:normalize=0:duration=first[a]",
+                    "[0:a]loudnorm=I=-19:TP=-2[v];[1:a]volume=0.55,aresample=48000[m];[v][m]amix=inputs=2:normalize=0:duration=first[a]",
                     "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", str(out_mp4)], check=True)
     with open(work / "captions.srt", "w") as fh:
         for n, (a, b, p) in enumerate(srt, 1): fh.write(f"{n}\n{ts(a)} --> {ts(b)}\n{p}\n\n")

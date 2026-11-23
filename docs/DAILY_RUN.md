@@ -3,7 +3,7 @@
 Owner's standing rules: **post at least one video every day**, learn and improve something every day,
 ask the owner only for what is truly needed. The owner has handed over the channel and given standing approval to publish.
 Schedule (America/Chicago): **10 AM research → 11 AM strategy → 12 PM produce → 1:00 PM public** (scheduled via publishAt).
-Full brief: `docs/MISSION.md`. Idea database + per-video tracker: `pipeline/ideas.py` (tables ideas / videos / checks).
+Full brief: `docs/MISSION.md`; SOP + adaptations: `docs/SOP.md`. Idea database + per-video tracker: `pipeline/ideas.py` (tables ideas / videos / checks).
 
 ## vidIQ credit budget (free plan: 150 per month, resets on the 22nd)
 - 11 AM: **one** `vidiq_channel_analytics` call per day (dimension video: views, engagedViews, minutes, AVD, AVP, subs, likes, comments) covers every 24 h/72 h/7 d check. 5 credits.
@@ -43,7 +43,9 @@ vidIQ free plan = 150 credits/month: spend them on research that changes decisio
 3. Write the script following the rules in `docs/narration_study.md`, then **self-critique**: hook in first line? every claim sourced? anything generic/templated? fix it.
    Fact-check into `docs/factcheck_epNNN.md`. Never reuse a previous script's wording.
 4. Plan shots first (storyboard list in the episode file: which shots are Blender hero shots, which are 2D). Render (Short: `pipeline/engine.py`, voice `dark`; Sleep: `pipeline/sleep_engine.py`, voice `dark_soft`, ≥60 min target), QA frames + loudness.
-5. **QC gate per docs/QUALITY.md**: score all 10 categories into docs/qc_log.md; hard blockers stop publishing; max 2 fixes per defective shot.
+5. **Blind QA (must pass):** `python3 pipeline/qa.py audio <mp4> <script>`, `qa.py motion <mp4> short|sleep`, `qa.py loud <mp4> short|sleep`.
+   Spoken numbers must match on-screen numbers. Fix only the failing line/shot.
+   **QC gate per docs/QUALITY.md**: score all 10 categories into docs/qc_log.md; hard blockers stop publishing; max 2 fixes per defective shot.
 6. Thumbnail (long-form) + honest title. Shorts: ≤60-char title with #shorts. Description discloses the AI voice.
 6. Upload and **schedule public for 13:00 America/Chicago today**. Confirm the status is scheduled.
 7. `ideas.py used <id> <videoId>`, `ideas.py video ...`; add a row to `docs/creative_log.md`.
