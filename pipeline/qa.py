@@ -27,12 +27,15 @@ def _num(m):
     try:
         if "." in x:
             a, b = x.split("."); return num2words(int(a)) + " point " + " ".join(num2words(int(d)) for d in b)
-        return num2words(int(x))
+        n = int(x)
+        if "," not in m.group(0) and 1100 <= n <= 2099 and not (2000 <= n <= 2009):  # years read as pairs: 1977 → nineteen seventy seven
+            hi, lo = divmod(n, 100); return num2words(hi) + (" hundred" if lo == 0 else " " + ("oh " if lo < 10 else "") + num2words(lo))
+        return num2words(n)
     except Exception: return x
 def norm(t):
     """Spell digits out as words (Whisper writes '3.8', '22,000'), unify US/UK spelling, drop punctuation."""
     t = t.lower()
-    t = re.sub(r"\d[\d,]*(\.\d+)?", _num, t)
+    t = re.sub(r"\d+(?:,\d{3})*(?:\.\d+)?", _num, t)
     t = t.replace("-", " ").replace(" and ", " ").replace("goodnight", "good night")
     t = re.sub(r"[^a-z ]", " ", t)
     return " ".join(US_UK.get(w, w) for w in t.split())

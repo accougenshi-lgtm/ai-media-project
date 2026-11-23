@@ -77,7 +77,8 @@ def make(epdir, ch, idx, out, speed=1.08, kind=None, hook=None):
            f"Dialogue: 0,{ass_time(0)},{ass_time(dur)},Hook,{esc(hook.upper())}"]
     for c in chunks:
         a, b = (c[0].start - t0) / speed, (c[-1].end - t0) / speed + 0.05
-        ass.append(f"Dialogue: 0,{ass_time(max(a,0))},{ass_time(b)},Cap,{esc(' '.join(w.word.strip() for w in c).upper())}")
+        txt = re.sub(r"\s+-|^-", " ", " ".join(w.word.strip() for w in c)).strip()   # STT splits "human-made" into "human" "-made"
+        ass.append(f"Dialogue: 0,{ass_time(max(a,0))},{ass_time(b)},Cap,{esc(txt.upper())}")
     (tmp / "caps.ass").write_text("\n".join(ass))
     # video: vertical crop of the chapter painting with a slow pan (2400x1350 → 760x1350 window → 1080x1920)
     png = epdir / f"ch{ch:02}.png"
