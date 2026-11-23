@@ -40,3 +40,4 @@ Format per day: date · what changed · numbers (48h / 7d) · lesson · next cha
   evidence 453K/41× and 31K at 46 subs). shortB = best remaining clip. **Variable tested: original what-if vs clip format** (same slot times, compare 72 h views + APV).
 - Analytics budget: skip tomorrow's paid call unless today's Studio data appears in the free channel counter first (save credits during lag).
 - 18:23 UTC block (context-limited): made + QA'd clip_venus.mp4 for 11-25 15:30 (WER 3.2%, loud/motion pass); caught + fixed wrong-colour planet (blue → new pale-yellow Venus kind). Not uploaded until publishing is unblocked.
+- 20:23 UTC block: Venus clip uploaded + drafted for 11-25 09:30; publish refused: **vidIQ free = 3 YouTube publishes/day** (reset 08:00 UTC). Rule added to DAILY_RUN. Original what-if now targets 11-25 15:30.

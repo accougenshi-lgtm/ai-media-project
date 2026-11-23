@@ -19,7 +19,7 @@ Full brief: `docs/MISSION.md`; SOP + adaptations: `docs/SOP.md`. Idea database +
 YouTube channel id UC8BNoObKWQuks2pzVrpHSbg (verified; long uploads allowed). Publish via vidIQ:
 `vidiq_video_upload` (localFile) → `vidiq_upload_image` (thumbnail) → `vidiq_social_post_draft_create`
 (privacyStatus public + publishAt 13:00 America/Chicago) → `vidiq_social_post_publish` → `vidiq_social_post_status`.
-vidIQ free plan = 150 credits/month: spend them on research that changes decisions, not on routine checks.
+**vidIQ free plan: max 3 YouTube uploads (publishes) per day, reset at midnight Pacific (08:00 UTC)**, which fits 2 Shorts + 1 sleep/day exactly; never use more than 3 publishes in one Pacific day. vidIQ free plan = 150 credits/month: spend them on research that changes decisions, not on routine checks.
 
 ## 10 AM research (no publishing)
 1. `bash pipeline/setup.sh`. If the TikTok transcriber isn't running and isn't finished, restart it
