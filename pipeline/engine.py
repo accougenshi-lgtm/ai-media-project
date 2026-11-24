@@ -73,7 +73,9 @@ def caption(img, text, t):
     for c in cs:
         share = (len(c) + 1) / total
         if acc <= t < acc + share or c is cs[-1] and t >= acc:
-            text_c(img, c.upper(), int(H * 0.74), 64); return
+            size = 64
+            while size > 40 and ImageDraw.Draw(img).textlength(c.upper(), font=font(size)) > W - 120: size -= 4   # never clip at the edges
+            text_c(img, c.upper(), int(H * 0.74), size); return
         acc += share
 
 # ---------- build ----------
