@@ -1,0 +1,12 @@
+{"key": "Bb", "loop": true, "beats": [
+ {"text": "This black hole has been humming one note for longer than humans have existed.",
+  "header": "NASA Chandra · Perseus cluster", "bg": {"nasa": "GSFC_20171208_Archive_e000078"}, "anchor": "longer than humans have existed"},
+ {"text": "Raised high enough for us to hear, it sounds like this.",
+  "header": "The real note, made audible", "bg": {"nasa": "GSFC_20171208_Archive_e000078"}, "cue": {"tone_hz": 466.16, "ms": 2400}},
+ {"text": "It's a B flat, fifty seven octaves below middle C.",
+  "header": "A whole piano spans about 7", "bg": {"paint": "nebula"}, "anchor": "a piano spans about 7 octaves", "counter": {"to": 57, "word": "seven"}, "sfx": "impact"},
+ {"text": "One wave takes ten million years. Our species is only about three hundred thousand years old.",
+  "header": "One wave ≈ 33× all of human history", "bg": {"paint": "deepfield"}, "anchor": "33x the age of our species", "sfx": "impact"},
+ {"text": "And it's still playing, because",
+  "header": "Detected by NASA's Chandra X-ray Observatory", "bg": {"nasa": "GSFC_20171208_Archive_e000078"}}
+]}
