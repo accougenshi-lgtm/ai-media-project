@@ -44,3 +44,10 @@ Format per day: date · what changed · numbers (48h / 7d) · lesson · next cha
 - 2026-11-24: owner feedback → retitled 3 Shorts for curiosity gaps (Andromeda now 13 views/1 like pre-change; compare after). Schedules verified intact. Title rule added to DAILY_RUN.
 - 02:23 UTC block: rendered EP005 original Short (34.9 s; WER 2.6%, loud/motion pass); fixed caption overflow (auto-fit font). Upload after 08:00 UTC reset.
 - Sound design v1 (owner brief): pipeline/sound.py, all-synth stems; EP005 remixed: −14.21 LUFS, WER unchanged 2.6%. Owner ear-check requested (new audio config = allowed SOP escalation).
+
+## 2026-11-24 11 AM strategy
+- First Studio rows (11-21→11-24 window, lagged ≈ day 1 only): EP002 Moon sleep **4 views, 3 engaged, 27 min watched, AVD 553 s (9:13), APV 32.5%**. Recorded as its 24 h checkpoint.
+  Shorts have no Studio rows yet. Public counters earlier: Andromeda Short 13 views / 1 like. Channel: 2 subs.
+- Traction: sleep format holds viewers ~9 min per view on day 1, encouraging for watch hours (N tiny, directional only).
+- Weakness: publishing depends on a per-call approval that resets after worker restarts → Wed Shorts stuck. Fix requested: owner sets Auto mode.
+- Plan: once unblocked, schedule Venus (Wed 09:30) + EP005v2 black hole (Wed 15:30). Next production: Exoplanets sleep script (2–3 h, recent JWST findings, ~110 wpm). Variable under test: original v2 Short vs clip Shorts.
