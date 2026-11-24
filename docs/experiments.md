@@ -51,3 +51,4 @@ Format per day: date · what changed · numbers (48h / 7d) · lesson · next cha
 - Traction: sleep format holds viewers ~9 min per view on day 1, encouraging for watch hours (N tiny, directional only).
 - Weakness: publishing depends on a per-call approval that resets after worker restarts → Wed Shorts stuck. Fix requested: owner sets Auto mode.
 - Plan: once unblocked, schedule Venus (Wed 09:30) + EP005v2 black hole (Wed 15:30). Next production: Exoplanets sleep script (2–3 h, recent JWST findings, ~110 wpm). Variable under test: original v2 Short vs clip Shorts.
+- 2026-11-24 afternoon: Auto mode on → Venus clip (P7W93AWOSmQ, Wed 09:30) + first short_v2 original (0SmO4YZxau4, Wed 15:30) scheduled. A/B: clip vs original v2, same slot times; compare 72 h views + APV. Fix: short_v2 encode was 124 MB for 17 s (grain) → crf 22 + 12 Mbps cap.

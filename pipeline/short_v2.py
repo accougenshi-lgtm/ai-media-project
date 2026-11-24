@@ -150,6 +150,6 @@ if __name__ == "__main__":
     (work / "caps.ass").write_text(captions(al, sb["beats"], dur)); shots(sb["beats"], al, dur, work)
     mix(sb["beats"], al, dur, v, sb.get("key", "D"), work)
     sh("ffmpeg", "-y", "-i", str(work / "video.mp4"), "-i", str(work / "master.wav"), "-vf", f"ass={work / 'caps.ass'}",
-       "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-shortest", str(out))
+       "-c:v", "libx264", "-preset", "slow", "-crf", "22", "-maxrate", "12M", "-bufsize", "24M", "-pix_fmt", "yuv420p", "-movflags", "+faststart", "-c:a", "aac", "-b:a", "192k", "-shortest", str(out))
     json.dump(dict(alignment=al, duration=dur), open(work / "alignment.json", "w"), indent=1)
     print(json.dumps(checks(work, out, sum(1 for b in sb["beats"] if b.get("cue")))))
