@@ -2,5 +2,3 @@
 | Slot | Title | postId | revision |
 |---|---|---|---|
 After publishing each: vidiq_social_post_status → schedule.py book → ideas.py video → creative_log row → remove from this list.
-| 2026-11-25 09:30 shortA | Why Venus Is Hotter Than Mercury #shorts (uploaded, drafted) | 138225a2-3755-4dcc-8f40-dec2b9eec085 | 36872f3a; publish AFTER 2026-11-24T08:00Z (daily cap) |
-| 2026-11-25 15:30 shortB (rendered, QA pass, not uploaded) | This Black Hole Has Been Humming for Millions of Years 😳 #shorts (output/ep005v2_black_hole.mp4, v2 pipeline) | — | — |
