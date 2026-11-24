@@ -43,3 +43,4 @@ Format per day: date · what changed · numbers (48h / 7d) · lesson · next cha
 - 20:23 UTC block: Venus clip uploaded + drafted for 11-25 09:30; publish refused: **vidIQ free = 3 YouTube publishes/day** (reset 08:00 UTC). Rule added to DAILY_RUN. Original what-if now targets 11-25 15:30.
 - 2026-11-24: owner feedback → retitled 3 Shorts for curiosity gaps (Andromeda now 13 views/1 like pre-change; compare after). Schedules verified intact. Title rule added to DAILY_RUN.
 - 02:23 UTC block: rendered EP005 original Short (34.9 s; WER 2.6%, loud/motion pass); fixed caption overflow (auto-fit font). Upload after 08:00 UTC reset.
+- Sound design v1 (owner brief): pipeline/sound.py, all-synth stems; EP005 remixed: −14.21 LUFS, WER unchanged 2.6%. Owner ear-check requested (new audio config = allowed SOP escalation).

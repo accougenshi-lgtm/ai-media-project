@@ -50,6 +50,8 @@ Fill the earliest open slot from `schedule.py need 2`; the steps below apply to 
 3. Write the script following the rules in `docs/narration_study.md`, then **self-critique**: hook in first line? every claim sourced? anything generic/templated? fix it.
    Fact-check into `docs/factcheck_epNNN.md`. Never reuse a previous script's wording.
 4. Plan shots first (storyboard list in the episode file: which shots are Blender hero shots, which are 2D). Render (Short: `pipeline/engine.py`, voice `dark`; Sleep: `pipeline/sleep_engine.py`, voice `dark_soft`, ≥60 min target), QA frames + loudness.
+4b. **Sound design (owner Audio Director brief, 2026-11-24):** after render, `python3 pipeline/sound.py <work_dir> <dry.mp4> <final.mp4> --key <K> --reveals <scene idx> --pops <idx>`.
+   All sounds synthesized (no third-party assets); bed locked to the video's key, ducked ~8 dB under VO; whoosh on cuts; riser cut ~50 ms before impacts on reveals (≥3.5 s apart); micro-pops pitch-varied ±3 st. Manifest saved as audio_manifest.json.
 5. **Blind QA (must pass):** `python3 pipeline/qa.py audio <mp4> <script>`, `qa.py motion <mp4> short|sleep`, `qa.py loud <mp4> short|sleep`.
    Spoken numbers must match on-screen numbers. Fix only the failing line/shot.
    **QC gate per docs/QUALITY.md**: score all 10 categories into docs/qc_log.md; hard blockers stop publishing; max 2 fixes per defective shot.
