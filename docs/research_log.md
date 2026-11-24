@@ -51,3 +51,4 @@ paradox ("These are not empty scars") → open question → welcome + like/sub C
 named trenches/species/exact depths, which beats generic "calm facts"; (4) long SEO description: emoji bullet per segment, many hashtags, closing comment question.
 Apply to space (don't copy): long-form "[Topic]: The [Worlds/Signals] Science Still Can't Explain"-style titles that stay true; a **recent-discoveries segment**
 in every sleep video (JWST/2025–26 papers, sourced); slow the sleep voice toward ~110 wpm; description template with emoji chapter bullets + closing question.
+- 2026-11-24 10 AM (context-limited): transcript snapshot; next sleep script (Exoplanets, 2–3 h, recent JWST findings, ~110 wpm) still to be written in a fresh-context block.
