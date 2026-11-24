@@ -42,3 +42,12 @@
 - Decision: next sleep title gets a specific, timely or unusual premise, not "Space Facts to Fall Asleep To". Clip Shorts can ride news pegs
   (our Voyager clip already says "nearly a full day").
 - "what if science shorts" this-week filter returned nothing (search filter quirk); rely on vidIQ outliers (Nov 22) for Shorts.
+
+## 2026-11-24: owner-shared reference (different niche: ocean), "Ocean Trenches: The Abyssal Worlds Humanity Still Cannot Explain"
+Underwater Earth 4K (tBjrD_BikTg), published 2026-11-21: **6,420 views, 65 likes, 9 comments at ~3 days, ~97 VPH**, 3:52:52 long (vidIQ).
+Speech (speech_stats): 24.4K words, **105 wpm**, median sentence 16 words, almost no "you". Slower than our sleep pace (129).
+Why it works: (1) mystery-framed title "…Humanity Still Cannot Explain" + "4K"; (2) opening = title restated → vivid image →
+paradox ("These are not empty scars") → open question → welcome + like/sub CTA in minute 1; (3) **recency**: cites research "published in 2026",
+named trenches/species/exact depths, which beats generic "calm facts"; (4) long SEO description: emoji bullet per segment, many hashtags, closing comment question.
+Apply to space (don't copy): long-form "[Topic]: The [Worlds/Signals] Science Still Can't Explain"-style titles that stay true; a **recent-discoveries segment**
+in every sleep video (JWST/2025–26 papers, sourced); slow the sleep voice toward ~110 wpm; description template with emoji chapter bullets + closing question.
