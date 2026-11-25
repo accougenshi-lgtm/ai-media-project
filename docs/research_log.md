@@ -53,3 +53,22 @@ Apply to space (don't copy): long-form "[Topic]: The [Worlds/Signals] Science St
 in every sleep video (JWST/2025–26 papers, sourced); slow the sleep voice toward ~110 wpm; description template with emoji chapter bullets + closing question.
 - 2026-11-24 10 AM (context-limited): transcript snapshot; next sleep script (Exoplanets, 2–3 h, recent JWST findings, ~110 wpm) still to be written in a fresh-context block.
 - 2026-11-25: expert research (Anthropic agent docs, 200-day faceless case study, TikTok corpus) -> docs/expert_notes.md
+
+## 2026-11-25: "Real Questions" harvest -> research/real_questions.json (160 questions, 10 topics)
+Method: Agent-Reach 1.6.1 (GitHub release, read-only) `youtube search`, 30 question-phrased queries (3 per topic), 12 results each,
+keeping titles that contain "?" (Bowie songs, playlists and kids-compilation noise dropped). Wording is verbatim video titles; `how_popular` = view count
+returned by the search at fetch time (null when the search didn't report it). Limits: these are **creator** titles, not viewer comments
+(video pages and comments were bot-blocked from the cloud run; vidIQ comments cost 5 credits/call, not spent without owner OK). Reddit not used.
+Top 10 for Shorts (biggest demand per topic, plus the strongest conspiracy hooks):
+1. "Is Earth Actually Flat?" (38,752,028 views) https://www.youtube.com/watch?v=VNqNnUJVcVs
+2. "The Fermi Paradox — Where Are All The Aliens? (1/2)" (35,548,607) https://www.youtube.com/watch?v=sNhhvQGsMEc
+3. "What If The Sun Disappeared?" (20,882,039) https://www.youtube.com/watch?v=rltpH6ck2Kc
+4. "What If You Fall into a Black Hole?" (19,342,746) https://www.youtube.com/watch?v=QqsLTNkzvaY
+5. "Can Humanity Stop A Planet-Killing Asteroid?" (9,734,928) https://www.youtube.com/watch?v=dKm7T13X7n4
+6. "Is Our Universe Inside a Black Hole?" (8,902,598) https://www.youtube.com/watch?v=vKeCr-MAyH4
+7. "How far can Voyager 1 go before we lose contact?" (6,736,049) https://www.youtube.com/watch?v=aalfNIvQaJ4
+8. "Will An Asteroid Hit Earth in 2032?" (4,276,096) https://www.youtube.com/watch?v=_-ZB2Z7VtmE
+9. "Why is NASA Worried About Betelgeuse Explosion?" (1,303,277) https://www.youtube.com/watch?v=5f9Kz5GsbDE
+10. "Nibiru is real  - Want to see proof?" (815,300) https://www.youtube.com/watch?v=O9na0AhFk54
+Also notable: "Why Haven't We Been Back To The Moon In 52 Years?" (375,593, RJKg_moRy5w); "Could CERN Create a Black Hole and Destroy Earth?" (1CIr230a_4E, views not shown).
+Next: if the owner approves, pull top viewer comments on 3–5 of these via vidIQ (or yt-dlp on the laptop) to get audience wording rather than creator wording.
