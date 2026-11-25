@@ -56,3 +56,12 @@ Format per day: date · what changed · numbers (48h / 7d) · lesson · next cha
 - 2026-11-24 20:23 CT block: vidIQ cap reached; rendered clip_sun_mass (21.9 s, WER 3.6%, loud/motion pass) for 11-26 15:30, upload after reset. Metricool connector reports no network linked yet (owner checking).
 - 2026-11-25: Metricool connected as backup publisher (20/month free). Best-time data supports 09:30/15:30 slots.
 - 2026-11-25 02:23–06:23 CT blocks: Sun clip uploaded + drafted for 11-26 15:30; publish stalled on approval 3× in unattended runs even with .claude/settings.json allow rule (cloud auto mode still asks for outward actions). Publishes only succeed when the owner is present.
+
+## 2026-11-25 11 AM strategy
+- Studio (11-21→11-25, lagged ~1-2 days; one call, 5 credits): **EP004 Moon Leaving Short (30.4 s, original what-if, loop ending): 190 views, 71 engaged, 70 min, AVD 56 s, APV 182.6%, 3 likes.**
+  EP002 Moon sleep: 40 views, 28 engaged, 202 min, AVD 7:07, APV 25.1%, 1 sub, 1 comment. Newer Shorts: no Studio rows yet (lag).
+- Traction: the loop ending works: APV 183% means the average viewer watched the 30 s Short ~1.8 times. Original what-if + loop is our best format so far.
+- Underperforming: sleep video discovery (40 views in ~3 days), though watch time per view is strong (7 min).
+- Weakness: unattended publishes stall on approval prompts (Sun clip waiting). Fix: publish while the owner is present; keep 1-2 days of buffer.
+- Plan: next original Short = "Will an Asteroid Hit Earth in 2032?" (idea #18, Real Question, 4.3M-view demand) built with short_v2, ~30 s, loop ending.
+  Variable tested: Real Questions title (question) vs statement titles, same length/loop structure. Verify 2024 YR4 latest impact odds (NASA CNEOS / ESA) before scripting.
