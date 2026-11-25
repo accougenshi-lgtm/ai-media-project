@@ -52,3 +52,4 @@ Format per day: date · what changed · numbers (48h / 7d) · lesson · next cha
 - Weakness: publishing depends on a per-call approval that resets after worker restarts → Wed Shorts stuck. Fix requested: owner sets Auto mode.
 - Plan: once unblocked, schedule Venus (Wed 09:30) + EP005v2 black hole (Wed 15:30). Next production: Exoplanets sleep script (2–3 h, recent JWST findings, ~110 wpm). Variable under test: original v2 Short vs clip Shorts.
 - 2026-11-24 afternoon: Auto mode on → Venus clip (P7W93AWOSmQ, Wed 09:30) + first short_v2 original (0SmO4YZxau4, Wed 15:30) scheduled. A/B: clip vs original v2, same slot times; compare 72 h views + APV. Fix: short_v2 encode was 124 MB for 17 s (grain) → crf 22 + 12 Mbps cap.
+- 2026-11-24 20:23/22:23 CT blocks: made clip_alcohol (Sgr B2, 23.4 s, WER 0, loud/motion pass), drafted for 11-26 09:30; publish call stalled on an approval prompt twice and the worker restarted each time. Kept in pending_posts.md.
