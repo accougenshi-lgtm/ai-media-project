@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__vidIQ__vidiq_social_post_publish",
+      "mcp__vidIQ__vidiq_social_post_draft_create",
+      "mcp__vidIQ__vidiq_social_post_draft_update",
+      "mcp__vidIQ__vidiq_social_post_status",
+      "mcp__vidIQ__vidiq_video_upload",
+      "mcp__vidIQ__vidiq_upload_image",
+      "mcp__vidIQ__vidiq_user_channels",
+      "mcp__vidIQ__vidiq_user_videos"
+    ]
+  }
+}
