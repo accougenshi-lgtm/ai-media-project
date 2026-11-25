@@ -52,3 +52,4 @@ named trenches/species/exact depths, which beats generic "calm facts"; (4) long 
 Apply to space (don't copy): long-form "[Topic]: The [Worlds/Signals] Science Still Can't Explain"-style titles that stay true; a **recent-discoveries segment**
 in every sleep video (JWST/2025–26 papers, sourced); slow the sleep voice toward ~110 wpm; description template with emoji chapter bullets + closing question.
 - 2026-11-24 10 AM (context-limited): transcript snapshot; next sleep script (Exoplanets, 2–3 h, recent JWST findings, ~110 wpm) still to be written in a fresh-context block.
+- 2026-11-25: expert research (Anthropic agent docs, 200-day faceless case study, TikTok corpus) -> docs/expert_notes.md
