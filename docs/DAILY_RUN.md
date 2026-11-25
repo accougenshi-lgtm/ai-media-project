@@ -76,3 +76,11 @@ Fill the earliest open slot from `schedule.py need 2`; the steps below apply to 
 ## Guardrails
 - No misleading titles, reused footage, copyrighted music, or realistic fakes of real events.
 - If an upload is refused/removed or something looks risky for the channel, stop and ask the owner.
+
+## Backup publisher: Metricool (connected 2026-11-25, brand blogId 8280441, channel "Orders of significance")
+- Free plan: 20 published posts/month, max 10 YouTube posts/24 h. Use only when vidIQ's 3/day cap or a stall blocks a slot.
+- Metricool needs a public media URL: upload the file with `vidiq_video_upload` (free, does not count as a publish) and pass its signed `videoUrl`,
+  then `createScheduledPost` with providers youtube, youtubeData {title, type "short"/"video", privacy public, madeForKids false, category SCIENCE_TECHNOLOGY}.
+- `getBrandSettings` may wrongly say "no network connected"; `getBestTimeToPostByNetwork` works.
+- Best-time data (2026-11-25, likely platform-wide benchmark, not our channel): weekday peaks ~10:00 and ~16:00 CT, weekends ~40-50% lower.
+  Our 09:30/15:30 slots sit just before the peaks: keep them.
