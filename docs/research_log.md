@@ -72,3 +72,4 @@ Top 10 for Shorts (biggest demand per topic, plus the strongest conspiracy hooks
 10. "Nibiru is real  - Want to see proof?" (815,300) https://www.youtube.com/watch?v=O9na0AhFk54
 Also notable: "Why Haven't We Been Back To The Moon In 52 Years?" (375,593, RJKg_moRy5w); "Could CERN Create a Black Hole and Destroy Earth?" (1CIr230a_4E, views not shown).
 Next: if the owner approves, pull top viewer comments on 3–5 of these via vidIQ (or yt-dlp on the laptop) to get audience wording rather than creator wording.
+- 2026-11-25 10 AM (context-limited): added 5 Real Questions ideas from research/real_questions.json to ideas DB (CERN, 2032 asteroid, universe-in-black-hole, Moon return, Nibiru).
