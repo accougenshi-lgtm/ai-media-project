@@ -24,3 +24,10 @@ were bot-blocked; simonwillison.net, karpathy.bearblog.dev, support.google.com n
 ## TikTok corpus (sina.growthtech top videos)
 - Top views (1.3M) are conspiracy-claim hooks and brand-new-tool news, not tutorials -> supports our "Real Questions" format
   (take the viral claim seriously, then reveal the real science).
+
+## Tools/skills scouted (2026-11-25), nothing installed
+- Panniantong/Agent-Reach (114K stars, MIT): read-only CLI for YouTube/Reddit/X/GitHub/web. Inside this cloud box its YouTube path is yt-dlp (bot-blocked here),
+  Reddit/X need a logged-in browser on a real computer, web reader r.jina.ai is not on our network allowlist. Worth it only on the owner's computer.
+- anthropics/skills (official): skill-creator, docs, design skills; nothing video-specific.
+- youtube-transcript skills: also yt-dlp-based, same block.
+- Composio "YouTube Automation": hosted service needing a Composio account + Google sign-in; candidate if vidIQ+Metricool ever fall short.
