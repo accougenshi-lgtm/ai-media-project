@@ -63,7 +63,9 @@ Fill the earliest open slot from `schedule.py need 2`; the steps below apply to 
    Owner refinement (2026-11-24): dramatic QUESTIONS are fine when the video takes that exact question seriously and answers it honestly
    ("Is a Black Hole Screaming at Us? 😱" → yes, Perseus' pressure waves = a B-flat 57 octaves below middle C).
    **"Real Questions" format:** harvest dramatic questions people actually ask (conspiracy/forum/comment/autocomplete phrasing),
-   use the question as the title, open by taking it seriously, then reveal the real science, which is often stranger than the theory. Cite where the question came from in research_log. Shorts: ≤60-char title with #shorts. Description discloses the AI voice.
+   use the question as the title, open by taking it seriously, then reveal the real science, which is often stranger than the theory. Cite where the question came from in research_log.
+   Question sourcing (laptop/Agent-Reach route tried 2026-11-25, not workable): use WebSearch for real phrasings (e.g. "<topic> reddit", "<topic> quora", "is <claim> real"), log the source URL + date; yt-dlp, Google/DDG autocomplete and reddit.com are blocked from this server.
+ Shorts: ≤60-char title with #shorts. Description discloses the AI voice.
 6. Upload and **schedule public for 13:00 America/Chicago today**. Confirm the status is scheduled.
 7. `ideas.py used <id> <videoId>`, `ideas.py video ...`; add a row to `docs/creative_log.md`.
 8. Verify the upload succeeded (`vidiq_social_post_status`, then `vidiq_user_videos` after 1 PM).
