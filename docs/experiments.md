@@ -55,3 +55,4 @@ Format per day: date · what changed · numbers (48h / 7d) · lesson · next cha
 - 2026-11-24 20:23/22:23 CT blocks: made clip_alcohol (Sgr B2, 23.4 s, WER 0, loud/motion pass), drafted for 11-26 09:30; publish call stalled on an approval prompt twice and the worker restarted each time. Kept in pending_posts.md.
 - 2026-11-24 20:23 CT block: vidIQ cap reached; rendered clip_sun_mass (21.9 s, WER 3.6%, loud/motion pass) for 11-26 15:30, upload after reset. Metricool connector reports no network linked yet (owner checking).
 - 2026-11-25: Metricool connected as backup publisher (20/month free). Best-time data supports 09:30/15:30 slots.
+- 2026-11-25 02:23–06:23 CT blocks: Sun clip uploaded + drafted for 11-26 15:30; publish stalled on approval 3× in unattended runs even with .claude/settings.json allow rule (cloud auto mode still asks for outward actions). Publishes only succeed when the owner is present.
