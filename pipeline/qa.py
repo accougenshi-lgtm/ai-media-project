@@ -34,8 +34,10 @@ def _num(m):
     except Exception: return x
 def norm(t):
     """Spell digits out as words (Whisper writes '3.8', '22,000'), unify US/UK spelling, drop punctuation."""
-    t = t.lower()
+    t = t.lower().replace("%", " percent")
     t = re.sub(r"\d+(?:,\d{3})*(?:\.\d+)?", _num, t)
+    t = re.sub(r"\b(eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen) hundred\b",   # "seventeen hundred" = 1,700
+               lambda m: "one thousand " + _O[_O.index(m.group(1)) - 10] + " hundred", t)
     t = t.replace("-", " ").replace(" and ", " ").replace("goodnight", "good night")
     t = re.sub(r"[^a-z ]", " ", t)
     return " ".join(US_UK.get(w, w) for w in t.split())

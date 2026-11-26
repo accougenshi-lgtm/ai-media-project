@@ -66,3 +66,7 @@ Format per day: date · what changed · numbers (48h / 7d) · lesson · next cha
 - Plan: next original Short = "Will an Asteroid Hit Earth in 2032?" (idea #18, Real Question, 4.3M-view demand) built with short_v2, ~30 s, loop ending.
   Variable tested: Real Questions title (question) vs statement titles, same length/loop structure. Verify 2024 YR4 latest impact odds (NASA CNEOS / ESA) before scripting.
 - 2026-11-26: vidIQ credits exhausted (0 left until 12-22 reset); paid vidIQ tools unavailable, use free tools + web search. Owner shared reference channel @cosmoinmotion_001.
+- 2026-11-26 work blocks: scheduled Fri 11-27 09:30 EP006 "Will an Asteroid Hit Earth in 2032? ☄️" (5xWsCf1yKso, 25.3 s, question title) and 15:30 EP007 "You're Moving 1.3 Million km/h Right Now 🌍" (k4kiK-XLHQA, 27.5 s, statement title).
+  **Variable tested: Real Question title vs statement title** (both original short_v2 Shorts with loop endings, similar length); compare 72 h views + APV, baseline EP004 190 views / APV 183%.
+  Pipeline fixes: beat alignment by normalized word matching (old word-count method drifted ~1 s when Whisper wrote numbers as digits), split-number captions merged, qa.norm handles "%" and "seventeen hundred", NASA ~orig fallback, HF xet off, opencv+jiwer in setup. vidIQ publishes today: 3/3 used (Sun clip + these two).
+  Open: no sleep render ready for tonight's or Friday's 21:00 slot (Exoplanets sleep script still not written).
