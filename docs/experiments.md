@@ -71,3 +71,14 @@ Format per day: date · what changed · numbers (48h / 7d) · lesson · next cha
   Pipeline fixes: beat alignment by normalized word matching (old word-count method drifted ~1 s when Whisper wrote numbers as digits), split-number captions merged, qa.norm handles "%" and "seventeen hundred", NASA ~orig fallback, HF xet off, opencv+jiwer in setup. vidIQ publishes today: 3/3 used (Sun clip + these two).
   Open: no sleep render ready for tonight's or Friday's 21:00 slot (Exoplanets sleep script still not written).
 - 2026-11-26 14:23 UTC block (context-limited): wrote docs/sleep_ep009_exoplanets_plan.md (13 chapters, verification list). Next blocks: fill Sat 11-28 15:30 Short; publish EP008 draft after 08:00 UTC 11-27; then Exoplanets script chapters 1–6 in a fresh-context session and start the render.
+
+## 2026-11-26 11 AM strategy (context-limited; vidIQ credits 0 → no per-video analytics)
+- Free channel counter (vidiq_user_channels, 2026-11-26 16:53 UTC): **8 subscribers, 5,664 channel views, 10 public videos** (was 2 subs / counter 0 on 11-23).
+  Per-video 24h/72h checkpoints due for 8 videos (ideas.py due) **not recorded**: no per-video data without credits; not estimating.
+- Traction: subs 2 → 8 in 3 days; channel views 5,664 total (cannot attribute per video). Best known per-video result still EP004 (190 views, APV 183%, 11-25 data).
+- Underperforming / unknown: everything since 11-24 lacks per-video numbers until credits renew 12-22 (or the owner checks Studio).
+- Weakness: no way to measure per-video results for ~4 weeks → A/B tests can't be read. Fix: ask owner for a weekly Studio screenshot/CSV (free), or
+  Metricool analytics (getAnalyticsDataByMetrics, free plan) — try it next strategy session.
+- Plan for the next open Short (Sat 11-28 15:30): "Voyager 1 Is Now One Light-Day From Earth 📡" (idea added today; news peg + 6.7M-view Real Question demand),
+  short_v2, ~30 s, statement title, loop ending. Verify date/distance on NASA JPL first. Variable still under test: statement vs question titles
+  (EP006 question, EP007/EP008/this statement). Sleep video (Exoplanets) remains top priority for a fresh-context session.
