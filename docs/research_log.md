@@ -73,3 +73,30 @@ Top 10 for Shorts (biggest demand per topic, plus the strongest conspiracy hooks
 Also notable: "Why Haven't We Been Back To The Moon In 52 Years?" (375,593, RJKg_moRy5w); "Could CERN Create a Black Hole and Destroy Earth?" (1CIr230a_4E, views not shown).
 Next: if the owner approves, pull top viewer comments on 3–5 of these via vidIQ (or yt-dlp on the laptop) to get audience wording rather than creator wording.
 - 2026-11-25 10 AM (context-limited): added 5 Real Questions ideas from research/real_questions.json to ideas DB (CERN, 2032 asteroid, universe-in-black-hole, Moon return, Nibiru).
+
+## 2026-11-26: viewer-worded Real Questions (YouTube comments) -> research/real_questions.json (+29, now 189)
+Method: no laptop was connected to the cloud session, so Agent-Reach/yt-dlp couldn't be used (YouTube bot-blocks the cloud). With owner OK we used
+vidIQ `vidiq_video_comments` (order=relevance, maxResult=100, 5 credits/call) on the top-viewed video of 7 topics: 35 credits spent, 40 -> 0
+(the 8th call, Planet X wy8fi77t8zU, was refused for lack of credits and not charged). 700 top-level threads plus the replies returned were filtered by
+script to non-channel-owner comments containing "?" (306), then hand-picked to **genuine questions** (29). Wording is verbatim. The only edits:
+HTML entities decoded, `<b>/<i>` tags removed, and a leading "@handle" of the person being replied to dropped. `how_popular` = likeCount as returned.
+Reddit not used. **Short of the 60 target**: most "?" comments on these videos are jokes and memes ("Or is it?", "yesn't", Crysis, Pluto), not questions.
+Per topic: mars 7 · aliens / fermi paradox 6 · flat earth 6 · voyager 4 · black holes 3 · asteroid impact 3 · sun dying 0 (all 100 threads were jokes)
+· not fetched: planet x / nibiru, betelgeuse, moon landing hoax.
+Top 10 viewer questions by likes:
+1. "…Will we evolve to be smarter? Will we kill each other? Or will we colonize the stars?…" (4,078 likes) https://www.youtube.com/watch?v=sNhhvQGsMEc
+2. "I have a question for flat earth theorists. how far down to I have to dig before I fall out of the world? 10m? 1km? 10km??" (1,662) https://www.youtube.com/watch?v=VNqNnUJVcVs
+3. "\"Shouldn't the universe be teeming with spaceships?\" Perhaps it is. … how in the hell are we supposed to see a single starship?" (998) https://www.youtube.com/watch?v=sNhhvQGsMEc
+4. "How is that even possible though? There's 200 billion to possibly 2 trillion galaxies… Are the odds of intelligent life just that scarce…?" (70) https://www.youtube.com/watch?v=sNhhvQGsMEc
+5. "If they can produce a battery that lasts that long, why can't they make batteries that last longer than a couple of months?" (55) https://www.youtube.com/watch?v=aalfNIvQaJ4
+6. "What about sealife? Is there anything in the seawater that would survive for any meaningful length of time on mars?" (51) https://www.youtube.com/watch?v=FkUNHhVbQ1Q
+7. "Have you tried traveling to the South pole and keep going down there?" (51) https://www.youtube.com/watch?v=VNqNnUJVcVs
+8. "What if Galaxies were spinning flat discs wait they are … What if Earth was a spinning gas planet?…" (49) https://www.youtube.com/watch?v=VNqNnUJVcVs
+9. "We only have TWO rockets that can holster tungsten projectiles into a planet killing rock?…" (47) https://www.youtube.com/watch?v=dKm7T13X7n4
+10. "…how in the hell is it EQUALLY terrifying that we are not alone as opposed to alone?…" (36) https://www.youtube.com/watch?v=sNhhvQGsMEc
+Viewer vs creator wording: creator titles are short, clean "What if X?" / "Is X?" hooks. Viewers (a) ask **follow-ups the video skipped**, e.g. how bright an iced Mars would look,
+whether white holes send you to the past, why Voyager's power source outlasts phone batteries, whether 2 trillion galaxies make loneliness impossible;
+(b) argue in **concrete, physical, often wrong-but-intuitive** terms ("how do we have sea level", "so the moon just follows us?", "dig before I fall out");
+(c) put the question at the end of a long ramble, with typos and "?!" stacks; (d) wrap the core question in jokes: the joke dialogue "Are we alone in the Universe?"
+got 4,511 likes but isn't logged as a question. Idea: open Shorts with the viewer's concrete objection ("If the Earth is flat, how far down would you dig?"),
+then do the math. Follow-up costs (vidIQ credits renew 2026-12-22, or yt-dlp on the laptop): Planet X, Betelgeuse and Moon-hoax comments.
