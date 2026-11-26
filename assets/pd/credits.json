@@ -27,7 +27,7 @@
   "file": "assets/cache/GSFC_20171208_Archive_e001861.jpg",
   "nasa_id": "GSFC_20171208_Archive_e001861",
   "title": "Full Moon (NASA Goddard)",
-  "used_in": "EP006",
+  "used_in": "EP006, EP008",
   "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001861",
   "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-26 unless noted"
  },
@@ -59,7 +59,7 @@
   "file": "assets/cache/PIA10748.jpg",
   "nasa_id": "PIA10748",
   "title": "Our Milky Way Gets a Makeover, artist concept (NASA/JPL-Caltech/R. Hurt)",
-  "used_in": "EP007",
+  "used_in": "EP007, EP008",
   "source": "https://images.nasa.gov/details/PIA10748",
   "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-26 unless noted"
  },
@@ -69,6 +69,30 @@
   "title": "Back in the Saddle Again (asteroid Eros, NASA/JHUAPL NEAR Shoemaker)",
   "used_in": "EP006",
   "source": "https://images.nasa.gov/details/PIA02900",
+  "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-26 unless noted"
+ },
+ {
+  "file": "assets/cache/PIA13994.jpg",
+  "nasa_id": "PIA13994",
+  "title": "Planets Under a Red Sun, artist concept (NASA/JPL-Caltech)",
+  "used_in": "EP008",
+  "source": "https://images.nasa.gov/details/PIA13994",
+  "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-26 unless noted"
+ },
+ {
+  "file": "assets/cache/PIA24571.jpg",
+  "nasa_id": "PIA24571",
+  "title": "Star Map of the Milky Way's Outer Halo (NASA/JPL-Caltech/NSF/R. Hurt/N. Garavito-Camargo & G. Besla)",
+  "used_in": "EP008",
+  "source": "https://images.nasa.gov/details/PIA24571",
+  "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-26 unless noted"
+ },
+ {
+  "file": "assets/cache/PIA13125.jpg",
+  "nasa_id": "PIA13125",
+  "title": "Omega Centauri (NASA/JPL-Caltech)",
+  "used_in": "EP008",
+  "source": "https://images.nasa.gov/details/PIA13125",
   "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-26 unless noted"
  }
 ]

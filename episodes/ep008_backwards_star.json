@@ -1,0 +1,14 @@
+{"key": "E", "loop": true, "beats": [
+ {"text": "Thirteen light-years from here, a star is orbiting the galaxy the wrong way.",
+  "header": "Kapteyn's Star · 12.8 light-years (illustration)", "bg": {"nasa": "PIA13994"}, "anchor": "its light left it about 13 years ago", "sfx": "impact"},
+ {"text": "Almost every star near us, the Sun included, circles the Milky Way in the same direction.",
+  "header": "Sun: one lap ≈ 230 million years", "bg": {"nasa": "PIA10748"}, "sfx": "whoosh"},
+ {"text": "This one goes backwards, so it passes us at about two hundred and ninety kilometres every second.",
+  "header": "≈ 293 km/s · Earth to Moon in 22 minutes", "bg": {"nasa": "PIA24571"}, "anchor": "Earth to the Moon in 22 minutes", "counter": {"to": 290, "word": "ninety"}, "sfx": "impact"},
+ {"text": "For a star, it races across our sky: it moves the width of a full Moon in about two centuries.",
+  "header": "8.6″ a year · 2nd-fastest star in our sky", "bg": {"nasa": "GSFC_20171208_Archive_e001861"}, "anchor": "a Moon-width in about 215 years"},
+ {"text": "Its low metal content says it is ancient, and one theory says it was born in a smaller galaxy the Milky Way swallowed.",
+  "header": "Pictured: Omega Centauri, suspected core · debated", "bg": {"nasa": "PIA13125"}, "sfx": "impact"},
+ {"text": "So the next time the night sky looks perfectly still, remember",
+  "header": "Kapteyn's Star: still going the wrong way", "bg": {"nasa": "PIA13994"}}
+]}
