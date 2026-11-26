@@ -13,3 +13,4 @@
 | 2026-11-24 | Clip: Why Venus Is Hotter Than Mercury (P7W93AWOSmQ, sched 11-25 09:30) | EP003 fact + our narration; new pale-yellow Venus painting | Caught wrong-colour planet in QA (blue → Venus kind) |
 | 2026-11-24 | EP005v2 original: This Black Hole Has Been Humming for Millions of Years (0SmO4YZxau4, sched 11-25 15:30) | First short_v2 build: NASA image, B-flat cue tone, word-synced counter to 57, 5-stem mix | 124 MB grain-heavy encode → capped bitrate (30 MB); pipeline default fixed |
 | 2026-11-24 | Clip: There's a Giant Cloud of Alcohol in Our Galaxy (DheBD0PdbKA, sched 11-26 09:30) | EP003 fact 89 + our narration; nebula painting; custom hook | Publish stalled twice on approval prompts; owner said go |
+| 2026-11-25 | Clip: The Sun Loses 4 Million Tonnes Every Second (Pv9H3-ND9qc, sched 11-26 15:30) | EP003 fact 6 + our narration; sun painting; E=mc² math in description | Published when owner present (unattended publish stalls) |

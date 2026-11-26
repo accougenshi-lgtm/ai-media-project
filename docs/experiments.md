@@ -65,3 +65,4 @@ Format per day: date · what changed · numbers (48h / 7d) · lesson · next cha
 - Weakness: unattended publishes stall on approval prompts (Sun clip waiting). Fix: publish while the owner is present; keep 1-2 days of buffer.
 - Plan: next original Short = "Will an Asteroid Hit Earth in 2032?" (idea #18, Real Question, 4.3M-view demand) built with short_v2, ~30 s, loop ending.
   Variable tested: Real Questions title (question) vs statement titles, same length/loop structure. Verify 2024 YR4 latest impact odds (NASA CNEOS / ESA) before scripting.
+- 2026-11-26: vidIQ credits exhausted (0 left until 12-22 reset); paid vidIQ tools unavailable, use free tools + web search. Owner shared reference channel @cosmoinmotion_001.
