@@ -49,11 +49,36 @@ def align(wav, beats):
     from faster_whisper import WhisperModel
     a, sr = sf.read(wav, dtype="float32"); x = np.interp(np.arange(0, len(a), sr / 16000), np.arange(len(a)), a).astype(np.float32)
     words = [w for s in WhisperModel("small.en", device="cpu", compute_type="int8").transcribe(x, word_timestamps=True, beam_size=5)[0] for w in s.words]
-    out, k = [], 0   # assign words to beats by script word counts (robust to STT spelling)
-    for x_ in beats:
-        n = len(x_["text"].split()); seg = words[k:k + n] or words[-1:]; k += n
-        out.append(dict(start=seg[0].start, end=seg[-1].end, words=[(w.word.strip(), w.start, w.end) for w in seg]))
-    return out, len(a) / sr
+    return assign([(w.word.strip(), w.start, w.end) for w in words], beats), len(a) / sr
+
+def assign(toks, beats):
+    """Map STT tokens to beats by aligning normalized words (2026-11-26: word counts drifted when Whisper wrote
+    'one point three' as '1' '.3' or 'a hundred and seven thousand' as '107' ',000')."""
+    import difflib
+    from qa import norm
+    m = []   # merge split numbers: '1' '.3' → '1.3', '23' ',000' → '23,000'
+    for w, s0, s1 in toks:
+        if m and re.match(r"^[.,]\d", w) and re.search(r"\d$", m[-1][0]): m[-1] = (m[-1][0] + w, m[-1][1], s1)
+        else: m.append((w, s0, s1))
+    hw, hi = [], []   # normalized STT words → token index
+    for i, (w, _, _) in enumerate(m):
+        for x in norm(w).split(): hw.append(x); hi.append(i)
+    sw, si = [], []   # normalized script words → beat index
+    for b, x_ in enumerate(beats):
+        for x in norm(x_["text"]).split(): sw.append(x); si.append(b)
+    first = {}   # beat → first matched token
+    for blk in difflib.SequenceMatcher(None, sw, hw, autojunk=False).get_matching_blocks():
+        for j in range(blk.size):
+            b = si[blk.a + j]; t = hi[blk.b + j]; first[b] = min(first.get(b, t), t)
+    starts, prev = [], 0
+    for b in range(len(beats)):
+        t = max(prev, first.get(b, prev + 1 if b else 0)) if b else 0; starts.append(min(t, len(m) - 1)); prev = starts[-1]
+    out = []
+    for b, t0 in enumerate(starts):
+        t1 = starts[b + 1] if b + 1 < len(starts) else len(m); seg = m[t0:max(t1, t0 + 1)]
+        out.append(dict(start=seg[0][1], end=seg[-1][2], words=seg))
+    w, s0, s1 = out[-1]["words"][-1]; out[-1]["words"][-1] = (w.rstrip(".!"), s0, s1)   # loop bridge never ends with a stop
+    return out
 
 def ass_t(s): s = max(0, s); return f"{int(s//3600)}:{int(s%3600//60):02}:{s%60:05.2f}"
 def captions(al, beats, dur):

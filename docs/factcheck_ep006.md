@@ -14,5 +14,5 @@ Builds on docs/factcheck_asteroid2032.md. Correction to that file: the JWST (Feb
 | "1 in 23" (anchor) | 1/0.043 = 23.3 |
 | Webb saw it one last time (Feb 2026), passes ~23,000 km from the Moon's centre | NIRCam 18 & 26 Feb 2026, faintest NEO detection; 22,900 ± 800 km: AAS Nova https://aasnova.org/2026/05/20/asteroid-2024-yr4-wont-hit-the-moon-new-jwst-observations-show/ ; ESA NEOCC https://neo.ssa.esa.int/-/asteroid-2024-yr4-will-not-impact-the-moon |
 | 22,900 km ≈ 2 Earths wide | Earth mean diameter 12,742 km (NASA Earth fact sheet); 22,900 / 12,742 = 1.80 → "almost two" |
-| Visual: asteroid shown is Bennu | NASA PIA24101 (OSIRIS-REx), labelled on screen "pictured: Bennu"; no NASA library image of 2024 YR4 exists |
+| Visual: asteroid shown is Eros | NASA PIA02900 (NEAR Shoemaker photo of Eros), labelled on screen "pictured: Eros"; no NASA library image of 2024 YR4 exists. (PIA24101 was rejected in QA: it is an orbit diagram, not a photo of Bennu.) |
 Spoken numbers vs on-screen: 3 / 3.1% (counter lands on 3, header gives 3.1%); sixty / 60 m; four / 4.3% (counter 4); twenty three thousand / 22,900 ("almost").

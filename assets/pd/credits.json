@@ -16,14 +16,6 @@
   "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-26 unless noted"
  },
  {
-  "file": "assets/cache/PIA24101.jpg",
-  "nasa_id": "PIA24101",
-  "title": "Asteroid Bennu's Particle Ejection Events (NASA/Goddard/University of Arizona/Lockheed Martin)",
-  "used_in": "EP006",
-  "source": "https://images.nasa.gov/details/PIA24101",
-  "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-26 unless noted"
- },
- {
   "file": "assets/cache/PIA25253.jpg",
   "nasa_id": "PIA25253",
   "title": "NEO Surveyor in an Infrared Starfield Filled With Asteroids, illustration (NASA/JPL-Caltech)",
@@ -69,6 +61,14 @@
   "title": "Our Milky Way Gets a Makeover, artist concept (NASA/JPL-Caltech/R. Hurt)",
   "used_in": "EP007",
   "source": "https://images.nasa.gov/details/PIA10748",
+  "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-26 unless noted"
+ },
+ {
+  "file": "assets/cache/PIA02900.jpg",
+  "nasa_id": "PIA02900",
+  "title": "Back in the Saddle Again (asteroid Eros, NASA/JHUAPL NEAR Shoemaker)",
+  "used_in": "EP006",
+  "source": "https://images.nasa.gov/details/PIA02900",
   "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-26 unless noted"
  }
 ]
