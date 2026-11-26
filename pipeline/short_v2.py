@@ -73,8 +73,8 @@ def captions(al, beats, dur):
             steps = max(2, int((t1 - t0) * FPS))
             for s in range(steps):
                 u = s / (steps - 1); v = round(c["to"] * (1 - (1 - u) ** 3))   # cubic ease-out
-                L.append(f"Dialogue: 1,{ass_t(t0 + (t1 - t0) * s / steps)},{ass_t(t0 + (t1 - t0) * (s + 1) / steps)},Count,{v}")
-            L.append(f"Dialogue: 1,{ass_t(t1)},{ass_t(end)},Count,{c['to']}")
+                L.append(f"Dialogue: 1,{ass_t(t0 + (t1 - t0) * s / steps)},{ass_t(t0 + (t1 - t0) * (s + 1) / steps)},Count,{v:,}")
+            L.append(f"Dialogue: 1,{ass_t(t1)},{ass_t(end)},Count,{c['to']:,}")
     return "\n".join(L)
 
 def shots(beats, al, dur, work):

@@ -1,0 +1,14 @@
+{"key": "D", "loop": true, "beats": [
+ {"text": "In February 2025, one asteroid had a three percent chance of hitting Earth.",
+  "header": "2024 YR4 · 3.1% · a record for its size", "bg": {"nasa": "GSFC_20171208_Archive_e001386"}, "anchor": "1 in 32: highest ever recorded for its size", "counter": {"to": 3, "word": "three"}, "sfx": "impact"},
+ {"text": "It's about sixty metres wide. Headlines called it a city killer.",
+  "header": "60 m ≈ a football pitch · pictured: Bennu", "bg": {"nasa": "PIA24101"}, "anchor": "about the width of a football pitch"},
+ {"text": "Then more telescopes tracked it, and Earth dropped out of the danger zone completely.",
+  "header": "NASA: no significant threat in 2032", "bg": {"nasa": "PIA25253"}, "sfx": "whoosh"},
+ {"text": "But the Moon was next in line, with a four percent chance.",
+  "header": "Lunar impact odds peaked ≈ 4.3%", "bg": {"nasa": "GSFC_20171208_Archive_e001861"}, "anchor": "roughly 1 in 23", "counter": {"to": 4, "word": "four"}, "sfx": "impact"},
+ {"text": "Then Webb spotted it one last time. It will pass almost twenty three thousand kilometres from the Moon's centre.",
+  "header": "JWST, Feb 2026 · 22,900 km ≈ 2 Earths wide", "bg": {"nasa": "GSFC_20171208_Archive_e001861"}, "anchor": "almost two Earth diameters", "sfx": "impact"},
+ {"text": "So in 2032 it hits nothing at all, even though",
+  "header": "Miss confirmed: Moon and Earth both safe", "bg": {"nasa": "GSFC_20171208_Archive_e001386"}, "anchor": "about 6 years from now"}
+]}

@@ -1,0 +1,16 @@
+{"key": "A", "loop": true, "beats": [
+ {"text": "Right now, you are flying through space at one point three million kilometres an hour.",
+  "header": "Measured against the Big Bang's afterglow", "bg": {"paint": "deepfield"}, "anchor": "about 1,500 times a passenger jet", "sfx": "impact"},
+ {"text": "Earth's spin carries you almost seventeen hundred kilometres an hour at the equator.",
+  "header": "1,670 km/h ≈ 1.4× the speed of sound", "bg": {"nasa": "GSFC_20171208_Archive_e001587"}, "anchor": "faster than sound", "sfx": "whoosh"},
+ {"text": "Its trip around the Sun runs at a hundred and seven thousand.",
+  "header": "London to New York in 3 minutes", "bg": {"nasa": "GSFC_20171208_Archive_e002035"}, "anchor": "London to New York in about 3 minutes", "counter": {"to": 107000, "word": "thousand"}, "sfx": "impact"},
+ {"text": "And the Sun swings us around the galaxy at about eight hundred thousand.",
+  "header": "One lap ≈ 230 million years", "bg": {"nasa": "PIA10748"}, "anchor": "one lap takes about 230 million years", "sfx": "whoosh"},
+ {"text": "You feel none of it, because your body only feels changes in speed.",
+  "header": "You sense acceleration, never speed", "bg": {"nasa": "GSFC_20171208_Archive_e001593"}},
+ {"text": "The bend in Earth's orbit is just six hundredths of one percent of gravity, and Earth falls along with you.",
+  "header": "0.06% g ≈ a golf ball's weight on you", "bg": {"nasa": "GSFC_20171208_Archive_e002035"}, "anchor": "a golf ball's weight on a 70 kg person", "sfx": "impact"},
+ {"text": "So you sit perfectly still, even though",
+  "header": "Still. And very, very fast.", "bg": {"nasa": "GSFC_20171208_Archive_e001587"}}
+]}
