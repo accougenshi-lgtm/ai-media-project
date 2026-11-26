@@ -100,3 +100,12 @@ whether white holes send you to the past, why Voyager's power source outlasts ph
 (c) put the question at the end of a long ramble, with typos and "?!" stacks; (d) wrap the core question in jokes: the joke dialogue "Are we alone in the Universe?"
 got 4,511 likes but isn't logged as a question. Idea: open Shorts with the viewer's concrete objection ("If the Earth is flat, how far down would you dig?"),
 then do the math. Follow-up costs (vidIQ credits renew 2026-12-22, or yt-dlp on the laptop): Planet X, Betelgeuse and Moon-hoax comments.
+
+## 2026-11-26: reference channel @cosmoinmotion_001 (owner-shared), Shorts list via yt-dlp flat list (fetched 2026-11-26, rounded public counts)
+Top: "Every star you see is dragging its worlds through the galaxy in a spiral" 1.0M; "A star 13 light-years from us is going the wrong way around the Milky Way" 387K;
+"Never Sitting Still" 315K; "Voyager 1 is leaving the Sun at 38,000 mph" 116K; "You live inside a giant bubble — and it's under attack right now." 66K; Cartwheel Galaxy 48K;
+"How Earth Will End?" 44K; "The oldest things in our galaxy are still flying around it..." 42K; "Nibiru never came, but astronomers really are hunting a hidden planet..." 37K.
+Why it works: one theme (cosmic MOTION) = recognisable series; titles are one surprising true statement aimed at "you/us", the claim IS the hook but the
+"why/how" stays open; questions underperform statements on this channel (How Earth Will End? 44K vs statement titles up to 1M). Debunk-adjacent framing works
+("Nibiru never came, but... real hidden-planet hunt"). Caution: the "spiral/vortex" solar-system idea is often shown wrongly; our version must show the true geometry.
+Takeaways for us: (1) build a series identity (e.g. "things moving that you never feel"), (2) test statement-hook titles vs Real Questions, (3) motion visuals > static.
