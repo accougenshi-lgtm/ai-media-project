@@ -28,7 +28,8 @@ def nasa(nid):
     p = CACHE / f"{nid}.jpg"
     if not p.exists():
         meta = json.loads(subprocess.run(["curl", "-s", "-m", "60", f"https://images-api.nasa.gov/asset/{nid}"], capture_output=True, text=True).stdout)
-        href = next(h["href"] for h in meta["collection"]["items"] if h["href"].endswith("~large.jpg")).replace("http://", "https://")
+        hrefs = [h["href"] for h in meta["collection"]["items"]]   # some assets have no ~large: fall back to ~orig
+        href = next(h for suf in ("~large.jpg", "~orig.jpg") for h in hrefs if h.endswith(suf)).replace("http://", "https://")
         sh("curl", "-s", "-m", "120", "-o", str(p), href)
     return p
 
