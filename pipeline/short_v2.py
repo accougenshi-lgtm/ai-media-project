@@ -4,7 +4,8 @@ token-bound captions/headers/counters (ASS) → 5-stem mix (VO, bed, sensory cue
   python pipeline/short_v2.py <storyboard.json> <out.mp4>
 Storyboard: {"key":"Bb","loop":true,"beats":[{"text","header","bg":{"nasa":id}|{"paint":kind},"anchor"?,"counter"?:{"to":57,"word":"seven"},
              "sfx"?:"impact"|"whoosh","cue"?:{"tone_hz":466.16,"ms":2500,"label":"..."}}]}"""
-import sys, json, re, pathlib, subprocess, random, numpy as np, soundfile as sf
+import os, sys, json, re, pathlib, subprocess, random, numpy as np, soundfile as sf
+os.environ.setdefault("HF_HUB_DISABLE_XET", "1")   # xet CAS downloads fail behind the proxy (2026-11-26)
 ROOT = pathlib.Path(__file__).resolve().parent.parent; sys.path.insert(0, str(ROOT / "pipeline"))
 CACHE = ROOT / "assets" / "cache"; CACHE.mkdir(parents=True, exist_ok=True); SR = 48000; FPS = 30
 NUM = re.compile(r"\d|\b(hundred|thousand|million|billion|trillion|octaves?|light years?)\b", re.I)
