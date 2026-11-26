@@ -1,0 +1,74 @@
+[
+ {
+  "file": "assets/cache/GSFC_20171208_Archive_e000078.jpg",
+  "nasa_id": "GSFC_20171208_Archive_e000078",
+  "title": "NASA Goddard archive image (Perseus cluster, used in EP005v2)",
+  "used_in": "EP005v2",
+  "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000078",
+  "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-26 unless noted (fetched 2026-11-25)"
+ },
+ {
+  "file": "assets/cache/GSFC_20171208_Archive_e001386.jpg",
+  "nasa_id": "GSFC_20171208_Archive_e001386",
+  "title": "Blue Marble 2012 (NASA Goddard)",
+  "used_in": "EP006",
+  "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001386",
+  "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-26 unless noted"
+ },
+ {
+  "file": "assets/cache/PIA24101.jpg",
+  "nasa_id": "PIA24101",
+  "title": "Asteroid Bennu's Particle Ejection Events (NASA/Goddard/University of Arizona/Lockheed Martin)",
+  "used_in": "EP006",
+  "source": "https://images.nasa.gov/details/PIA24101",
+  "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-26 unless noted"
+ },
+ {
+  "file": "assets/cache/PIA25253.jpg",
+  "nasa_id": "PIA25253",
+  "title": "NEO Surveyor in an Infrared Starfield Filled With Asteroids, illustration (NASA/JPL-Caltech)",
+  "used_in": "EP006",
+  "source": "https://images.nasa.gov/details/PIA25253",
+  "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-26 unless noted"
+ },
+ {
+  "file": "assets/cache/GSFC_20171208_Archive_e001861.jpg",
+  "nasa_id": "GSFC_20171208_Archive_e001861",
+  "title": "Full Moon (NASA Goddard)",
+  "used_in": "EP006",
+  "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001861",
+  "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-26 unless noted"
+ },
+ {
+  "file": "assets/cache/GSFC_20171208_Archive_e001587.jpg",
+  "nasa_id": "GSFC_20171208_Archive_e001587",
+  "title": "Black Marble - Americas (NASA Earth Observatory/Goddard)",
+  "used_in": "EP007",
+  "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001587",
+  "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-26 unless noted"
+ },
+ {
+  "file": "assets/cache/GSFC_20171208_Archive_e001593.jpg",
+  "nasa_id": "GSFC_20171208_Archive_e001593",
+  "title": "Black Marble - City Lights 2012 (NASA Earth Observatory/Goddard)",
+  "used_in": "EP007",
+  "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001593",
+  "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-26 unless noted"
+ },
+ {
+  "file": "assets/cache/GSFC_20171208_Archive_e002035.jpg",
+  "nasa_id": "GSFC_20171208_Archive_e002035",
+  "title": "Full disk view of the Sun, June 21 2010 (NASA SDO)",
+  "used_in": "EP007",
+  "source": "https://images.nasa.gov/details/GSFC_20171208_Archive_e002035",
+  "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-26 unless noted"
+ },
+ {
+  "file": "assets/cache/PIA10748.jpg",
+  "nasa_id": "PIA10748",
+  "title": "Our Milky Way Gets a Makeover, artist concept (NASA/JPL-Caltech/R. Hurt)",
+  "used_in": "EP007",
+  "source": "https://images.nasa.gov/details/PIA10748",
+  "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-26 unless noted"
+ }
+]
