@@ -96,7 +96,7 @@ def captions(al, beats, dur):
             L.append(f"Dialogue: 0,{ass_t(ch[0][1])},{ass_t(ch[-1][2] + 0.04)},Cap,{{\\fscx92\\fscy92\\t(0,90,\\fscx100\\fscy100)}}{txt}")
         c = b.get("counter")
         if c:   # token-bound: start 600 ms before the target word, land exactly on its end
-            tgt = next((w for w in ws if c["word"].lower() in w[0].lower() or str(c["to"]) in w[0].replace(",", "")), ws[-1])   # STT may write digits; t0, t1 = tgt[1] - 0.6, tgt[2]
+            tgt = next((w for w in ws if c["word"].lower() in w[0].lower() or str(c["to"]) in w[0].replace(",", "")), ws[-1]); t0, t1 = tgt[1] - 0.6, tgt[2]   # STT may write digits
             steps = max(2, int((t1 - t0) * FPS))
             for s in range(steps):
                 u = s / (steps - 1); v = round(c["to"] * (1 - (1 - u) ** 3))   # cubic ease-out
