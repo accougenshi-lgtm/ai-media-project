@@ -109,3 +109,12 @@ Why it works: one theme (cosmic MOTION) = recognisable series; titles are one su
 "why/how" stays open; questions underperform statements on this channel (How Earth Will End? 44K vs statement titles up to 1M). Debunk-adjacent framing works
 ("Nibiru never came, but... real hidden-planet hunt"). Caution: the "spiral/vortex" solar-system idea is often shown wrongly; our version must show the true geometry.
 Takeaways for us: (1) build a series identity (e.g. "things moving that you never feel"), (2) test statement-hook titles vs Real Questions, (3) motion visuals > static.
+
+## 2026-11-26 10 AM research (context-limited, one web search)
+- News pegs this week (web search 2026-11-26, ScienceDaily/NASA listings; verify each on the primary page before use):
+  Voyager 1 nearing one light-day from Earth (NASA, Nov 2026) → added idea "Voyager 1 Is Now One Light-Day From Earth 📡" (Short; ties to the 6.7M-view
+  Real Question aalfNIvQaJ4 and the 55-like viewer question about its power source); ESA Euclid's first comet discovery (images 16–24 Sep 2026);
+  first of three consecutive supermoons on 24 Nov; a reported large new dwarf-planet candidate beyond Pluto (unverified, do not use until checked).
+  Sources: https://www.sciencedaily.com/news/space_time/astronomy/ ; https://science.nasa.gov/solar-system/skywatching/whats-up-november-2026-skywatching-tips-from-nasa/ ;
+  https://sciencedaily.com/releases/2026/11/261124055852.htm
+- Sleep video is overdue (both 21:00 slots open); plan in docs/sleep_ep009_exoplanets_plan.md, script to be written in a fresh-context session.
