@@ -14,3 +14,7 @@ State (2026-11-27 ~04:30 UTC):
 - Rules: owner's standing approval to publish daily; ask before spending money, deleting, or changing anything outside the channel's videos. Never invent numbers. Disclose the AI voice in descriptions. Original/public-domain assets only; log credits in assets/pd/credits.json. Keep messages to the owner short and plain. Watch context headroom: write long scripts in chunks and commit often.
 
 Scheduled tasks (research 10 AM, strategy 11 AM, work block every 2 h at :23, Sunday review) should point at this session. First, say hi to the owner in 2–3 lines, publish EP008 if the cap has reset, then start the Exoplanets sleep script.
+
+Update 2026-11-27 ~10:00 UTC: EP010 Voyager Short scheduled Sat 11-28 15:30 (ZLZdptvlaCo). Owner voice/sound/script notes applied
+(see docs/experiments.md 2026-11-27); owner chose to keep EP008 + EP010 as scheduled (old voice); new style starts with EP011.
+Open: Sun 11-29 Shorts, all 21:00 sleep slots (Exoplanets sleep video still top priority). Owner's weekly usage limit is nearly out: keep sessions lean.
