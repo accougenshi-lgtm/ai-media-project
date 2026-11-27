@@ -82,3 +82,13 @@ Format per day: date · what changed · numbers (48h / 7d) · lesson · next cha
 - Plan for the next open Short (Sat 11-28 15:30): "Voyager 1 Is Now One Light-Day From Earth 📡" (idea added today; news peg + 6.7M-view Real Question demand),
   short_v2, ~30 s, statement title, loop ending. Verify date/distance on NASA JPL first. Variable still under test: statement vs question titles
   (EP006 question, EP007/EP008/this statement). Sleep video (Exoplanets) remains top priority for a fresh-context session.
+
+## 2026-11-27 11 AM strategy
+- Data (vidiq_user_channels, free, fetched 2026-11-27 16:53 UTC): **10 subs, 6,511 views, 12 videos**. Change since 11-26: +2 subs, +847 views, +2 videos (EP006 asteroid went public at 09:30 CT; the second is most likely DheBD0PdbKA or a count lag; not verified). EP007 is still scheduled for 15:30 CT.
+- 12 checkpoints are due (24h/72h for 4fpv4LcdZJ4, qzlnjNx-9oU, YdGlyoar9oo, ehqacZVfdMQ, -BlXAL_div4, P7W93AWOSmQ, 0SmO4YZxau4, DheBD0PdbKA, pSZKjWZYPZM). **None recorded**: vidIQ credits are 0 until 12-22, YouTube is blocked from the server, and Metricool analytics were not tried this session. No per-video numbers are invented.
+- Traction: the channel is growing about 850 views a day with no per-video split. I can't say which video is driving it.
+- Weakness: per-video measurement is blind, so the title test (question vs statement) can't be scored. **Fix:** in Part 3, try Metricool getAnalyticsDataByMetrics (free) for YouTube per-video views first, or ask the owner for a Studio screenshot of the last 7 days.
+- Today's video: idea #24 "Voyager 1 Is Now One Light-Day From Earth 📡" (rank 4.55, top), EP010 storyboard written 11-27 for Sat 11-28 15:30.
+  - Overlap risk: clip Short ehqacZVfdMQ "Voyager 1 Is 24 Billion km Away and Still Listening" went out 11-24 15:30. EP010 uses a different angle (the light-day milestone, the 2-day reply time, 18,000 days, Pale Blue Dot) and different visuals. It must not reuse EP003 fact 35 wording.
+  - The old "Still Listening" title may now be shaky because of the Oct comms pause. Leave it; don't repeat that claim.
+  - Variable under test: statement title (same arm as EP007 and EP008). No other change to the format.
