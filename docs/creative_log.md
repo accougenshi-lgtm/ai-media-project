@@ -3,6 +3,7 @@
 
 | Date | Video | Original contributions | Key decisions |
 |---|---|---|---|
+| 2026-11-27 | EP010 original: Voyager 1 Is Now One Light-Day From Earth 📡 (ZLZdptvlaCo, sched 11-28 15:30) | short_v2, news peg (18 Nov 2026), statement title, light-day math 25.9 bn km = 173 AU, 22 W transmitter, 2 of 10 instruments | Two NASA diagrams had baked-in labels that fought the captions → swapped for unlabelled art |
 | 2026-11-22 | EP002 Moon Facts to Fall Asleep To (82sf45vCeqM) | Original 12-chapter script (3.7K words); procedural moon/earth/eclipse paintings coded from scratch; original ambient pad synthesized; custom voice preset | Sleep format chosen from YouTube data (median 133K views); calm pacing measured against leaders |
 | 2026-11-22 | EP004 The Moon Is Leaving Us (pSZKjWZYPZM) | Original script + 6 hand-coded animated scenes (laser pulse, ruler, shrinking-eclipse) | 30 s length from Shorts outlier research; loop ending; numbers derived on screen |
 | 2026-11-23 | Clip: It May Rain Diamonds on Uranus and Neptune (4fpv4LcdZJ4) | Fact from our EP003 script + our narration; new procedural ice-giant painting made for the clip; captions timed by STT | Clip format test (owner suggestion); trimmed spoken label so the hook opens the Short |

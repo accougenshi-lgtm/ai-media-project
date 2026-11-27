@@ -94,5 +94,53 @@
   "used_in": "EP008",
   "source": "https://images.nasa.gov/details/PIA13125",
   "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-26 unless noted"
+ },
+ {
+  "file": "assets/cache/PIA17462.jpg",
+  "nasa_id": "PIA17462",
+  "title": "Voyager 1 Entering Interstellar Space Artist Concept",
+  "used_in": "EP010",
+  "source": "https://images.nasa.gov/details/PIA17462",
+  "license": "NASA/JPL-Caltech via images.nasa.gov, public domain per NASA media usage guidelines; fetched 2026-11-27"
+ },
+ {
+  "file": "assets/cache/PIA17464.jpg",
+  "nasa_id": "PIA17464",
+  "title": "Voyager 1 Launch 1977",
+  "used_in": "EP010",
+  "source": "https://images.nasa.gov/details/PIA17464",
+  "license": "NASA/JPL-Caltech via images.nasa.gov, public domain per NASA media usage guidelines; fetched 2026-11-27"
+ },
+ {
+  "file": "assets/cache/PIA17048.jpg",
+  "nasa_id": "PIA17048",
+  "title": "One Voyager Out, One Voyager In Artist Concept",
+  "used_in": "EP010",
+  "source": "https://images.nasa.gov/details/PIA17048",
+  "license": "NASA/JPL-Caltech via images.nasa.gov, public domain per NASA media usage guidelines; fetched 2026-11-27"
+ },
+ {
+  "file": "assets/cache/PIA26147.jpg",
+  "nasa_id": "PIA26147",
+  "title": "Six Deep Space Network Antennas in Madrid Arrayed",
+  "used_in": "EP010",
+  "source": "https://images.nasa.gov/details/PIA26147",
+  "license": "NASA/JPL-Caltech via images.nasa.gov, public domain per NASA media usage guidelines; fetched 2026-11-27"
+ },
+ {
+  "file": "assets/cache/PIA14111.jpg",
+  "nasa_id": "PIA14111",
+  "title": "Model of Voyager Artist Concept",
+  "used_in": "EP010",
+  "source": "https://images.nasa.gov/details/PIA14111",
+  "license": "NASA/JPL-Caltech via images.nasa.gov, public domain per NASA media usage guidelines; fetched 2026-11-27"
+ },
+ {
+  "file": "assets/cache/PIA23645.jpg",
+  "nasa_id": "PIA23645",
+  "title": "Pale Blue Dot Revisited",
+  "used_in": "EP010",
+  "source": "https://images.nasa.gov/details/PIA23645",
+  "license": "NASA/JPL-Caltech via images.nasa.gov, public domain per NASA media usage guidelines; fetched 2026-11-27"
  }
 ]

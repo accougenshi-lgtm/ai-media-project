@@ -1,0 +1,14 @@
+{"key": "D", "loop": true, "beats": [
+ {"text": "Saying hello to Voyager 1 now takes a full day.",
+  "header": "Voyager 1 · one light-day from Earth (18 Nov 2026)", "bg": {"nasa": "PIA17462"}, "anchor": "a radio message needs 24 hours, one way", "sfx": "impact"},
+ {"text": "It launched in nineteen seventy-seven and has been coasting outward ever since, at about seventeen kilometres every second.",
+  "header": "Launched 5 Sep 1977 · ≈17 km/s", "bg": {"nasa": "PIA17464"}, "anchor": "New York to London in 5½ minutes", "counter": {"to": 17, "word": "seventeen"}, "sfx": "whoosh"},
+ {"text": "One light-day is about twenty-six billion kilometres, a hundred and seventy-three times farther out than the Sun.",
+  "header": "25.9 billion km ≈ 173 × Earth–Sun", "bg": {"nasa": "PIA17048"}, "anchor": "173 trips from Earth to the Sun", "sfx": "impact"},
+ {"text": "Its transmitter runs on about twenty watts, roughly a fridge light bulb, and seventy-metre dishes on Earth still catch it.",
+  "header": "Transmitter ≈ 22 W · Deep Space Network", "bg": {"nasa": "PIA26147"}, "anchor": "about one fridge bulb of power"},
+ {"text": "Its plutonium power shrinks every year, so engineers keep switching instruments off; only two of ten still run.",
+  "header": "2 of 10 science instruments still on", "bg": {"nasa": "PIA14111"}, "anchor": "a few watts less every year", "sfx": "impact"},
+ {"text": "And every day it drifts one and a half million kilometres farther from the Sun, which means",
+  "header": "Earth seen by Voyager 1, 1990 · +1.5M km a day", "bg": {"nasa": "PIA23645"}, "anchor": "about four Earth–Moon trips a day"}
+]}

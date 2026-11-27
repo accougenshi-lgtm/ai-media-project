@@ -40,6 +40,7 @@ def norm(t):
                lambda m: "one thousand " + _O[_O.index(m.group(1)) - 10] + " hundred", t)
     t = t.replace("-", " ").replace(" and ", " ").replace("goodnight", "good night")
     t = re.sub(r"[^a-z ]", " ", t)
+    t = re.sub(r"\bkm\b", "kilometres", t)   # Whisper abbreviates spoken "kilometres"
     return " ".join(US_UK.get(w, w) for w in t.split())
 
 def script_text(p):
