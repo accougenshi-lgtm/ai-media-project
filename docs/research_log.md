@@ -118,3 +118,9 @@ Takeaways for us: (1) build a series identity (e.g. "things moving that you neve
   Sources: https://www.sciencedaily.com/news/space_time/astronomy/ ; https://science.nasa.gov/solar-system/skywatching/whats-up-november-2026-skywatching-tips-from-nasa/ ;
   https://sciencedaily.com/releases/2026/11/261124055852.htm
 - Sleep video is overdue (both 21:00 slots open); plan in docs/sleep_ep009_exoplanets_plan.md, script to be written in a fresh-context session.
+
+## 2026-11-27 10 AM research (short block: Part 2 context nearly full)
+- Voyager 1 peg checked (for Sat 11-28 15:30 Short). It reached **one light-day** on **18 Nov 2026, ~10:16 UTC**: ~25.9 billion km, 173.14 AU (EarthSky https://earthsky.org/space/voyager-1-1-light-day-from-earth-november-17-18-2026/ ; NASA downloads page https://science.nasa.gov/resource/voyager-one-light-day-downloads/ ; NASA SVS https://svs.gsfc.nasa.gov/15120 ; CNN 2026-11-18). A command takes 24 h each way. So the title "…Is Now One Light-Day From Earth" is still true, but the news is 9–10 days old by Saturday.
+- Caution on health claims: JPL said on 2026-10-29 that Voyager 1 had a communications pause (silent ~Oct 19–20, a thruster group went offline and backups took over, fault protection). A UNN (Ukraine) report says the probe has stopped sending science data; I found no NASA confirmation. CNN says 2 of 10 instruments still run. **Do not state current instrument/science status in the Short** unless a JPL page dated after 11-14 is verified. https://science.nasa.gov/blogs/voyager/2026/10/29/nasas-voyager-1-conserves-power-resolves-brief-communications-pause/
+- Voyager 2 is not expected to reach a light-day until ~2035 (Space.com via search, unverified).
+- No new ideas added: this was search snippets only, with no outlier view counts.
