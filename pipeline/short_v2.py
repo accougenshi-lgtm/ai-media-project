@@ -33,11 +33,14 @@ def nasa(nid):
         sh("curl", "-s", "-m", "120", "-o", str(p), href)
     return p
 
+SFX = False         # set True to bring back the old hard/micro SFX layers
+VOICE = "narrator"   # owner voice notes 2026-11-27 (was "dark")
+
 def vo(beats, work):
     from voice_fx import render
     parts = []
     for i, x in enumerate(beats):
-        w = work / f"b{i}.wav"; render("dark", x["text"], str(w), seed=i); parts.append(w)
+        w = work / f"b{i}.wav"; render(VOICE, x["text"], str(w), seed=i); parts.append(w)
     (work / "l.txt").write_text("".join(f"file '{p.resolve()}'\n" for p in parts))
     sh("ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(work / "l.txt"), str(work / "raw_vo.wav"))
     sh("ffmpeg", "-y", "-i", str(work / "raw_vo.wav"), "-af",
@@ -124,18 +127,19 @@ def shots(beats, al, dur, work):
     sh("ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(work / "v.txt"), "-c", "copy", str(work / "video.mp4"))
 
 def mix(beats, al, dur, voice, key, work):
-    from sound import bed, whoosh, impact, pop, riser, KEYS
+    from sound import space_bed, whoosh, impact, pop, riser, KEYS
     n = int(dur * SR) + SR // 4; root = KEYS[key]
     def place(buf, x, at, gain_db, pitch=1.0):
         if pitch != 1.0: x = np.interp(np.arange(0, len(x), pitch), np.arange(len(x)), x)
         x = x / (np.abs(x).max() + 1e-9) * 10 ** (gain_db / 20); s = max(0, int(at * SR)); buf[s:s + len(x)] += x[:len(buf) - s]
-    B = np.zeros(n); place(B, bed(dur + .25, root), 0, -30)
+    B = np.zeros(n); place(B, space_bed(dur + .25), 0, -27)
     H = np.zeros(n); M = np.zeros(n); C = np.zeros(n); last = -9
     for i, (b, a) in enumerate(zip(beats, al)):
-        if i and b.get("sfx") == "impact" and a["start"] - last >= 3.5:
+        if not SFX: pass   # owner 2026-11-27: ambient bed only, no whooshes/risers/impacts/pops
+        elif i and b.get("sfx") == "impact" and a["start"] - last >= 3.5:
             place(H, riser(1100, root), a["start"] - 1.1 - 0.05, -16); place(H, impact(), a["start"], -9, random.uniform(.96, 1.04)); last = a["start"]
         elif i: place(H, whoosh(random.choice([220, 280, 340])), a["start"] - .15, -17 + random.uniform(-2, 2), random.uniform(.95, 1.05))
-        if b.get("counter"): place(M, pop(random.uniform(-3, 3)), a["start"] + .3, -21 + random.uniform(-2, 2))
+        if SFX and b.get("counter"): place(M, pop(random.uniform(-3, 3)), a["start"] + .3, -21 + random.uniform(-2, 2))
         if b.get("cue"):   # sensory payoff: the real phenomenon made audible (synthesized from the physics)
             tt = np.arange(int(b["cue"]["ms"] * SR / 1000)) / SR; f = b["cue"]["tone_hz"]
             tone = (np.sin(2 * np.pi * f * tt) + .35 * np.sin(4 * np.pi * f * tt)) * np.minimum(1, tt / .25) * np.minimum(1, (tt[-1] - tt) / .4 + 1e-9)

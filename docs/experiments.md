@@ -82,3 +82,12 @@ Format per day: date · what changed · numbers (48h / 7d) · lesson · next cha
 - Plan for the next open Short (Sat 11-28 15:30): "Voyager 1 Is Now One Light-Day From Earth 📡" (idea added today; news peg + 6.7M-view Real Question demand),
   short_v2, ~30 s, statement title, loop ending. Verify date/distance on NASA JPL first. Variable still under test: statement vs question titles
   (EP006 question, EP007/EP008/this statement). Sleep video (Exoplanets) remains top priority for a fresh-context session.
+
+## 2026-11-27 · Owner feedback → production change (voice, pauses, sound, script)
+Owner notes: "galaxy" sounds weird; replace long pauses with emphasis on the last word; try a slight accent; SFX sound unpolished
+(a constant "whirring") → just ambient space noise; scripts should go point → point → point while keeping curiosity.
+Changes (short_v2 default from EP011 on): voice preset `narrator` (slight UK blend, galaxy fix, tighten pauses); sound = `sound.space_bed`
+(non-tonal shaped noise: rumble + faint air, slow breathing), SFX off (`SFX=False`); narration_study.md script rule.
+Test render: EP008 v3 (output/ep008_v3.mp4): WER 0.0%, pauses ≤170 ms, −14 LUFS, bed RMS ≈25 dB under VO.
+Caveat (one-variable rule): this changes voice + pacing + sound together by owner directive, so a retention change can't be pinned on one of them.
+Next isolated test: accent on vs off on two comparable Shorts once per-video analytics are readable.

@@ -20,6 +20,19 @@ def bed(dur, root):  # atmospheric drone: root + fifth + octave, slow LFOs, brow
             for f, a, p, ph in [(root, .5, 17, 0), (root * 1.5, .3, 23, 1), (root * 2, .25, 31, 2)])
     brown = np.cumsum(rng.normal(0, 1, n)); brown -= np.convolve(brown, np.ones(4800) / 4800, "same")
     return (x + 0.004 * brown) * env(n, SR, SR)
+def space_bed(dur, seed=11):
+    """Owner note 2026-11-27: SFX and the tonal drone read as 'whirring' and unpolished. Replacement: a soft, non-tonal
+    space ambience. Spectrally shaped noise (FFT, no oscillators): a deep rumble (~1/f², rolled off above 400 Hz) plus a
+    faint airy layer (2-7 kHz) that slowly breathes in and out on 19 s / 29 s cycles so it never feels static."""
+    g = np.random.default_rng(seed); n = int(dur * SR); f = np.fft.rfftfreq(n, 1 / SR)
+    def shaped(mag):
+        X = (g.normal(size=f.size) + 1j * g.normal(size=f.size)) * mag; y = np.fft.irfft(X, n); return y / (np.abs(y).max() + 1e-9)
+    ff = np.maximum(f, 20)
+    rumble = shaped((1 / ff) * (1 / (1 + (ff / 400) ** 4)) * (ff > 25))
+    air = shaped(np.exp(-0.5 * (np.log(ff / 3800) / 0.45) ** 2))
+    tt = t(n)
+    x = rumble * (0.75 + 0.25 * np.sin(2 * np.pi * tt / 19)) + 0.10 * air * (0.5 + 0.5 * np.sin(2 * np.pi * tt / 29 + 1.3))
+    return x * env(n, int(1.5 * SR), int(1.5 * SR))
 def whoosh(ms=300):  # band-limited noise swell, peak centred
     n = int(ms * SR / 1000); w = rng.normal(0, 1, n) * np.hanning(n) ** 1.5
     return lp(w, 0.25) - lp(w, 0.02)

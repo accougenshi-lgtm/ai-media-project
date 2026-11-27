@@ -53,3 +53,14 @@ Uses "we" (narrator and viewer together).
 
 **TTS rule (2026-11-23, from blind QA):** never make a label its own short sentence ("Fact two."). The voice preset's short-line emphasis
 (slower + lower pitch) smears the F into "Vact" (STT heard it right only 5/12 times). Write "Fact two: ..." (3/3 clear in testing).
+
+**Owner script rule (2026-11-27): "get to the point, then the next point, then the next, while dragging it on to keep them curious."**
+- Every line delivers one concrete point at once: no wind-up, no restating the last line.
+- Every line also opens the next question ("…but that's not the strange part", or a number that begs a "how?").
+  The answer arrives in the next line, which opens the next loop. Pay off each loop within 1–2 lines. Never hold an answer back so long that it feels like a stall.
+- Self-check per draft: cover each line and ask "does the viewer want the next one?". Cut or rewrite any line where the answer is no.
+
+**Owner voice notes (2026-11-27), applied in `pipeline/voice_fx.py` preset `narrator` (now the short_v2 default):**
+- "galaxy" sounded odd: espeak gave a mid-word open ɐ (ɡˈælɐksi). Fixed with phoneme overrides + mid-word ɐ→ə (`phonemes()`).
+- No long pauses: at each break, the ~300 ms before it (the last word) gets +2.5 dB and an 8% stretch, then the gap shrinks to 70 ms (`tighten()`).
+- Slight accent: 60% am_onyx + 40% bm_george on UK phonemes (a light British lean, not a full accent). Old -2 st pitch shift dropped to -0.5 (it smeared consonants).
