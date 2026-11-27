@@ -1,14 +1,64 @@
-{"key": "V", "loop": true, "beats": [
- {"text": "A spacecraft launched in 1977 just became the first human-made object one light-day from Earth.",
-  "header": "Voyager 1 · 18 Nov 2026 (illustration)", "bg": {"nasa": "PIA17049"}, "anchor": "first spacecraft one light-day out", "sfx": "impact"},
- {"text": "That's about twenty-six billion kilometres, so far that its radio signal, moving at the speed of light, takes a full day to reach us.",
-  "header": "≈ 25.9 billion km · 173 AU", "bg": {"nasa": "PIA17046"}, "counter": {"to": 26, "word": "twenty-six"}, "sfx": "whoosh"},
- {"text": "Send it a command today, and you'll hear back the day after tomorrow.",
-  "header": "24 hours out · 24 hours back", "bg": {"nasa": "PIA22924"}, "anchor": "a 2-day round trip"},
- {"text": "Light makes that trip in one day. Voyager, at about seventeen kilometres every second, needed eighteen thousand days.",
-  "header": "≈ 17 km/s · launched 5 Sep 1977", "bg": {"nasa": "PIA17049"}, "counter": {"to": 18000, "word": "thousand"}, "anchor": "17,971 days", "sfx": "impact"},
- {"text": "In 1990, on its way out, it turned around and took this: Earth, smaller than a pixel.",
-  "header": "Pale Blue Dot · 1990 · ~6 billion km", "bg": {"nasa": "PIA00452"}},
- {"text": "So tonight, when you look up, remember: out there,",
-  "header": "Voyager 1: one light-day and counting", "bg": {"nasa": "PIA17046"}}
-]}
+{
+ "key": "D",
+ "loop": true,
+ "beats": [
+  {
+   "text": "A spacecraft launched in 1977 just became the first human-made object one light-day from Earth.",
+   "header": "Voyager 1 · 18 Nov 2026 (illustration)",
+   "bg": {
+    "nasa": "PIA17049"
+   },
+   "anchor": "first spacecraft one light-day out",
+   "sfx": "impact"
+  },
+  {
+   "text": "That's about twenty-six billion kilometres, so far that its radio signal, moving at the speed of light, takes a full day to reach us.",
+   "header": "≈ 25.9 billion km · 173 AU (diagram)",
+   "bg": {
+    "nasa": "PIA17046"
+   },
+   "counter": {
+    "to": 26,
+    "word": "twenty-six"
+   },
+   "sfx": "whoosh",
+   "anchor": "173× the Earth–Sun distance"
+  },
+  {
+   "text": "Send it a command today, and its reply arrives the day after tomorrow.",
+   "header": "24 hours out · 24 hours back",
+   "bg": {
+    "paint": "deepfield"
+   },
+   "anchor": "a 2-day round trip"
+  },
+  {
+   "text": "Light makes that trip in one day. Voyager, at about seventeen kilometres every second, needed eighteen thousand days.",
+   "header": "≈ 17 km/s · launched 5 Sep 1977",
+   "bg": {
+    "nasa": "PIA17049"
+   },
+   "counter": {
+    "to": 18000,
+    "word": "thousand"
+   },
+   "anchor": "17,971 days",
+   "sfx": "impact"
+  },
+  {
+   "text": "In 1990, on its way out, it turned around and took this: Earth, smaller than a pixel.",
+   "header": "Pale Blue Dot · 1990 · ~6 billion km",
+   "bg": {
+    "nasa": "PIA00452"
+   },
+   "anchor": "Earth: 0.12 pixel"
+  },
+  {
+   "text": "So tonight, when you look up, remember: out there,",
+   "header": "Voyager 1: one light-day and counting (diagram)",
+   "bg": {
+    "nasa": "PIA17046"
+   }
+  }
+ ]
+}

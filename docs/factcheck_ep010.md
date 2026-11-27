@@ -1,5 +1,5 @@
 # Fact-check EP010 "Voyager 1 Is Now One Light-Day From Earth 📡" (episodes/ep010_voyager_light_day.json), drafted 2026-11-27
-Status: storyboard + facts drafted; NOT rendered. Planned slot Sat 11-28 15:30 CT. (EP009 number is reserved for the Exoplanets sleep video.)
+Status: rendered + QA passed 2026-11-27 (output/ep010.mp4, 32.4 s); PIA22924 dropped (2018 Voyager 2 data plot) → deepfield painting; PIA17046 labelled "diagram". Draft 4c08f37f awaiting publish.
 
 | Claim | Source / derivation |
 |---|---|

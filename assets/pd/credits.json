@@ -94,5 +94,29 @@
   "used_in": "EP008",
   "source": "https://images.nasa.gov/details/PIA13125",
   "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-26 unless noted"
+ },
+ {
+  "file": "assets/cache/PIA17049.jpg",
+  "nasa_id": "PIA17049",
+  "title": "Voyager in Space Artist Concept (NASA/JPL-Caltech)",
+  "used_in": "EP010",
+  "source": "https://images.nasa.gov/details/PIA17049",
+  "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-27"
+ },
+ {
+  "file": "assets/cache/PIA17046.jpg",
+  "nasa_id": "PIA17046",
+  "title": "Voyager Goes Interstellar Artist Concept / diagram (NASA/JPL-Caltech)",
+  "used_in": "EP010",
+  "source": "https://images.nasa.gov/details/PIA17046",
+  "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-27"
+ },
+ {
+  "file": "assets/cache/PIA00452.jpg",
+  "nasa_id": "PIA00452",
+  "title": "Solar System Portrait - Earth as Pale Blue Dot (NASA/JPL)",
+  "used_in": "EP010",
+  "source": "https://images.nasa.gov/details/PIA00452",
+  "license": "NASA Image and Video Library (images.nasa.gov), public domain per NASA media usage guidelines; fetched 2026-11-27"
  }
 ]
