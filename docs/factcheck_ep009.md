@@ -12,3 +12,10 @@ Built in chunks; every fact used in the script must have a row here. Status: cha
 | About three quarters were found by the transit method (Kepler, TESS) | EarthSky 2026 (same); per-method tables in secondary sources (e.g. jcrass.space citing the Exoplanet Archive: transit ~4,650) | Say "about three in four". Check archive counts page before render |
 | Radial velocity is 2nd (~1,100); microlensing ~200–280; direct imaging fewer than ~100 | arXiv:2404.09143 table; jcrass.space table | Numbers differ by date → script uses only "a few hundred" / "fewer than a hundred" |
 | Microlensing planets are often seen only once; Roman telescope expected to find many more | EarthSky/secondary | Verify Roman numbers on NASA before use |
+
+## Ch 3 — Hot Jupiters (in progress)
+| Claim | Source | Note |
+|---|---|---|
+| WASP-76b, ~640 light-years away: iron vaporises on the dayside, winds carry it to the night side, where it condenses (iron "rain") | ESPRESSO/VLT, Ehrenreich et al., Nature 2020; Scientific American https://www.scientificamerican.com/article/molten-iron-rain-falls-on-scorching-hot-exoplanet/ ; Space.com https://space.com/alien-planet-iron-rain-WASP-76b.html | Say "likely rains iron" (it is inferred from spectra, not seen) |
+| HD 189733b, ~64 light-years, deep blue; silicate particles may fall sideways as glass in very strong winds | Discover https://www.discovermagazine.com/5-of-the-strangest-and-most-dangerous-exoplanets-ever-discovered-47295 | TODO: find the NASA/Hubble 2013 colour source and the wind speed before scripting; the cause of the blue colour isn't sourced yet |
+| WASP-12b spiralling into its star (orbital decay) | TODO (search gave nothing; try Yee et al. 2020 ApJL) | |
